@@ -1,5 +1,6 @@
 import React from 'react';
 
+import logo from '../../logo.png';
 import { HeaderDiv } from './NavBar.styled';
 
 function NavBar() {
@@ -7,7 +8,7 @@ function NavBar() {
     <HeaderDiv>
       <div>
         <a href="/">
-          <img src="/logo.png" alt="Josemaria Nriagu" />
+          <img src={logo} alt="Josemaria Nriagu" />
         </a>
       </div>
       <nav>
