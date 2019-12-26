@@ -1,34 +1,36 @@
 // Create global styles using styled components to be injected into components.
-import { createGlobalStyle } from "styled-components";
-import screen from './screens';
+import { createGlobalStyle } from 'styled-components';
+import theme from './Theme';
 
 const GlobalStyle = createGlobalStyle`
 :root {
    font-size: 62.5%;
 }
-* {
+*,  *::after, *::before {
    box-sizing: border-box;
 }
 body{
    background-color: #282c34;
    text-align: left;
    margin: 0;
-   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+   font-family: -apple-system, BlinkMacSystemFont, 'Raleway', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
 }
 h1 {
    font-size: calc(2.5*3.2rem);
    margin: 0;
-   color: ${props => (props.h1 ? "#c6930a" : "white")};
-   @media ${screen.mobile}{
+   font-weight: 400;
+   color: ${props => (props.h1 ? `${theme.gold}` : 'white')};
+   @media ${theme.mobile}{
       font-size: calc(2.0*3.2rem);
    }
 }
 h2 {
    font-size: 2.4rem;
    margin-top: 1rem;
-   @media ${screen.mobile}{
+   font-weight: 400;
+   @media ${theme.mobile}{
       font-size: calc(0.8*2.4rem);
    }
 }
@@ -50,8 +52,11 @@ a{
    color: white;
    text-decoration: none;
    transition: color 1s;
+   outline: none;
+   /* this line disables the blue highlight when touched in mobile chromium browsers */
+   -webkit-tap-highlight-color: transparent;
    :hover {
-      color: #c6930a;
+      color: ${theme.gold};
    }
 }
 button {
@@ -71,7 +76,7 @@ button {
 input, textarea, select {
    font-size: 1.5rem;
    /* inject font family for textarea */
-   font-family: "Roboto", sans-serif;
+   font-family: 'Roboto', sans-serif;
    margin-top: 1rem;
    padding: 1rem;
    border-radius: .5rem;
