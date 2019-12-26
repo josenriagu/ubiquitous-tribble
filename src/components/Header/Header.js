@@ -15,7 +15,7 @@ function Header() {
   }, 500);
 
   return (
-    <AppHeader>
+    <AppHeader id="home">
       <NavBar />
       <div>
         <h1>{name}</h1>
