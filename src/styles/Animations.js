@@ -9,7 +9,7 @@ export const rotate = keyframes`
   }
 `;
 
-export const jump = keyframes`
+export const bounce = keyframes`
    0% {
       top: 83%;
    }

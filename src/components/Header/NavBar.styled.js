@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { rotate, beat } from '../../styles/Animations';
 import theme from '../../styles/Theme';
 
@@ -28,7 +29,21 @@ export const HeaderDiv = styled.div`
     display: flex;
     justify-content: space-between;
     @media ${theme.mobile} {
-      width: 70%;
+      display: none !important;
     }
+  }
+`;
+
+export const MobileNav = styled.nav`
+  display: none;
+  @media ${theme.mobile}{
+  width: 100%;
+  padding: 1rem 2.5rem;
+  position: fixed;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
   }
 `;
