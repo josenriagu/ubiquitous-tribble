@@ -9,8 +9,12 @@ const GlobalStyle = createGlobalStyle`
 *,  *::after, *::before {
    box-sizing: border-box;
 }
+html {
+   scroll-behavior: smooth;
+}
 body{
-   background-color: #282c34;
+   background-color: #000000;
+   color: white;
    text-align: left;
    margin: 0;
    font-family: -apple-system, BlinkMacSystemFont, 'Raleway', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;

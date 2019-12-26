@@ -7,7 +7,10 @@ export const sizes = {
 
 const theme = {
   mobile: `(max-width: ${sizes.mobile})`,
-  gold: "#c6930a"
+  gold: '#c6930a',
+  primaryDark: '#0d0c1d',
+  primaryLight: '#effffa',
+  primaryHover: '#343078'
 }
 
 export default theme;
