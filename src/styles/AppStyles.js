@@ -1,32 +1,38 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
+import { rotate, jump, beat } from './Animations';
+import screen, { sizes } from './screens';
 
-const rotate = keyframes`
-  from {
-     transform: rotate(0deg);
-  }
-  to {
-     transform: rotate(360deg);
-  }
-`;
+const animations = [rotate, beat];
+
+const randAnimation = animations[Math.floor(Math.random() * animations.length)];
 
 export const AppDiv = styled.div`
-  width: 1000px;
-  margin: .5rem auto;
-  @media (max-width: 500px){
-    width: 450px;
+  width: ${ sizes.desktop};
+  margin: 0 auto;
+@media ${screen.mobile} {
+    width: ${ sizes.mobileRes};
     margin: .5rem auto;
   }
 `;
 
 export const AppHeader = styled.header`
+   /* border: 1px solid red; */
    width: 100%;
    display: flex;
    flex-direction: column;
-   height: 100vh;
+   justify-content: space-between;
+   height: 85vh;
+   margin-top: .5rem;
+   padding: 1rem;
    div:last-child {
-      margin: auto 0;
       text-align: center;
       color: white;
+      margin-bottom: 20rem;
+      img {
+         width: 2rem;
+         position: absolute;
+         animation: ${jump} 1s linear infinite;
+      }
    }
 `;
 
@@ -40,7 +46,7 @@ export const HeaderDiv = styled.div`
       height: 6rem;
       position: relative;
       overflow: hidden;
-      animation: ${rotate} 8s linear infinite;
+      animation: ${randAnimation} ${randAnimation === rotate ? "8s" : "2s"} linear infinite;
       cursor: pointer;
       img {
          max-width: 100%;
@@ -52,8 +58,8 @@ export const HeaderDiv = styled.div`
       width: 40%;
       display: flex;
       justify-content: space-between;
-      @media (max-width: 500px) {
-         width: 50%;
+      @media ${screen.mobile} {
+         width: 70%;
       }
    }
 `;
