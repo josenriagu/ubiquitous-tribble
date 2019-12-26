@@ -1,5 +1,6 @@
 // Create global styles using styled components to be injected into components.
 import { createGlobalStyle } from "styled-components";
+import screen from './screens';
 
 const GlobalStyle = createGlobalStyle`
 :root {
@@ -20,10 +21,16 @@ h1 {
    font-size: calc(2.5*3.2rem);
    margin: 0;
    color: ${props => (props.h1 ? "#c6930a" : "white")};
+   @media ${screen.mobile}{
+      font-size: calc(2.0*3.2rem);
+   }
 }
 h2 {
    font-size: 2.4rem;
-   margin: 0;
+   margin-top: 1rem;
+   @media ${screen.mobile}{
+      font-size: calc(0.8*2.4rem);
+   }
 }
 h3 {
    font-size: 1.872rem;

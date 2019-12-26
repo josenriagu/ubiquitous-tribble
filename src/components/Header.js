@@ -25,7 +25,10 @@ function Header() {
          <NavBar />
          <div>
             <h1>{name}</h1>
-            <h2>Software Engineer</h2>
+            <h2>Team-Oriented Software Engineer</h2>
+            <a href="#about">
+               <img src="/mouse_icon.png" alt="mouse scroll" />
+            </a>
          </div>
       </AppHeader>
    );
