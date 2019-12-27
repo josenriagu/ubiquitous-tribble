@@ -3,7 +3,7 @@ class About {
     this.name = props.name;
     this.intro = props.intro;
   }
-}
+};
 
 class Human extends About {
   constructor(props) {
@@ -13,16 +13,16 @@ class Human extends About {
   hello() {
     tempAlert(`${this.intro}! My name is ${this.name}. Me love ${this.likes[0]} and ${this.likes[1]}`, 5000);
   }
-}
+};
 
 const say = new Human({
   name: "Jose",
   intro: "Hallo",
   likes: [
-    "buiding functional teams ❤️",
+    "building functional teams ❤️",
     "making things work 😇"
   ]
-})
+});
 
 function tempAlert(message, duration) {
   let p = document.createElement('p');
