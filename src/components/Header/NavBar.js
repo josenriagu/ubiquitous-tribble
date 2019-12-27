@@ -20,20 +20,20 @@ function NavBar() {
         </nav>
       </HeaderDiv>
       <MobileNav>
-        <a href="#home" onClick={Window.reload}>
-          <i class="fas fa-home fa-1x"></i>
+        <a href="#home">
+          <i className="fas fa-home fa-1x"></i>
         </a>
         <a href="#about">
-          <i class="fas fa-address-book fa-1x"></i>
+          <i className="fas fa-address-book fa-1x"></i>
         </a>
         <a href="#stack">
-          <i class="fas fa-database fa-1x"></i>
+          <i className="fas fa-database fa-1x"></i>
         </a>
         <a href="#projects">
-          <i class="fas fa-code fa-1x"></i>
+          <i className="fas fa-code fa-1x"></i>
         </a>
         <a href="#contact">
-          <i class="fas fa-phone fa-1x"></i>
+          <i className="fas fa-phone fa-1x"></i>
         </a>
       </MobileNav>
     </>

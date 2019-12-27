@@ -31,16 +31,18 @@ h1 {
    }
 }
 h2 {
-   font-size: 2.4rem;
+   font-size: 3.5rem;
    margin-top: 1rem;
    font-weight: 400;
-   @media ${theme.mobile}{
-      font-size: calc(0.8*2.4rem);
-   }
+   color: ${theme.gold}
 }
 h3 {
-   font-size: 1.872rem;
-   margin-bottom: 0rem;
+   font-size: calc(1.5 * 2.4rem);
+   margin-bottom: 0;
+   font-weight: 400;
+   @media ${theme.mobile}{
+      font-size: calc(0.8 * 2.4rem);
+   }
 }
 h4 {
    font-size: 1.75rem;
@@ -70,11 +72,20 @@ button {
    margin: 1.5rem 0;
    padding: 1.2rem;
    border-radius: .5rem;
-   border: .1rem solid #6ea22c;
+   border: .1rem solid ${theme.gold};
    background-color: transparent;
-   :hover {
-   background-color: #6ea22c;
    color: white;
+   font-family: 'Raleway', san-serif;
+   font-weight: 400;
+   transition: transform .5s;
+   :hover {
+   /* background-color: #6ea22c; */
+      -webkit-transform: scale(1.05);-ms-transform: scale(1.05);
+      transform: scale(1.05);
+      /* box-shadow: -0.1rem 1rem 1rem 0 rgba(255, 255, 255, 0.08); */
+   }
+   :focus {
+      outline: none;
    }
 }
 input, textarea, select {
