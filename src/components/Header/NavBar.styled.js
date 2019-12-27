@@ -38,12 +38,14 @@ export const MobileNav = styled.nav`
   display: none;
   @media ${theme.mobile}{
   width: 100%;
-  padding: 1rem 2.5rem;
+  border-top: .05rem solid white;
+  padding: 1.3rem 2.5rem;
   position: fixed;
   background-color: #000000;
   display: flex;
   justify-content: space-between;
   bottom: 0;
   left: 0;
+  z-index: 99;
   }
 `;
