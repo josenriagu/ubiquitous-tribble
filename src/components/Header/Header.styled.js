@@ -17,7 +17,7 @@ export const AppHeader = styled.header`
     img {
       width: 2rem;
       position: absolute;
-      animation: ${bounce} 1s linear infinite;
+      animation: ${bounce} 1.3s ease infinite;
     }
   }
 `;
