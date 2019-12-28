@@ -1,5 +1,23 @@
 import { keyframes } from 'styled-components';
 
+export const xdBounce = keyframes`
+   100% {
+      transform: translateX(calc(100rem - 5rem));
+   }
+`;
+
+export const xmBounce = keyframes`
+   100% {
+      transform: translateX(calc(34.5rem - 5rem));
+   }
+`;
+
+export const yBounce = keyframes`
+   100% {
+      transform: translateY(calc(60vh - 5rem));
+   }
+`;
+
 export const rotate = keyframes`
   from {
      transform: rotate(0deg);

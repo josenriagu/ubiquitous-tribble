@@ -4,7 +4,7 @@ import theme from '../../styles/Theme';
 
 export const AboutDiv = styled.div`
   margin-top: 10rem;
-  margin-bottom: 5rem;
+  padding-top: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
