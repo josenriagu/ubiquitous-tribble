@@ -1,6 +1,6 @@
 // Create global styles using styled components to be injected into components.
 import { createGlobalStyle } from 'styled-components';
-import theme from './Theme';
+import { screens, colors } from './variables';
 
 const GlobalStyle = createGlobalStyle`
 :root {
@@ -13,8 +13,8 @@ html {
    scroll-behavior: smooth;
 }
 body{
-   background-color: #000000;
-   color: white;
+   background-color: ${(props) => props.theme.body};
+   color: ${(props) => props.theme.text};
    text-align: left;
    margin: 0;
    font-family: -apple-system, BlinkMacSystemFont, 'Raleway', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -25,8 +25,8 @@ h1 {
    font-size: calc(2.5*3.2rem);
    margin: 0;
    font-weight: 400;
-   color: ${props => (props.h1 ? `${theme.gold}` : 'white')};
-   @media ${theme.mobile}{
+   color: ${props => (props.h1 ? `${colors.gold}` : props.theme.text)};
+   @media ${screens.mobile}{
       font-size: calc(2.0*3.2rem);
    }
 }
@@ -34,14 +34,13 @@ h2 {
    font-size: 3.5rem;
    margin-top: 1rem;
    font-weight: 400;
-   color: ${theme.gold}
+   color: ${colors.gold}
 }
 h3 {
    font-size: calc(1.5 * 2.4rem);
    margin-bottom: 0;
    font-weight: 400;
-   color: white;
-   @media ${theme.mobile}{
+   @media ${screens.mobile}{
       font-size: calc(0.8 * 2.4rem);
    }
 }
@@ -62,14 +61,14 @@ label {
 }
 a{
    font-size: 1.6rem;
-   color: white;
+   color: ${(props) => props.theme.text};
    text-decoration: none;
    transition: color 1s;
    outline: none;
    /* this line disables the blue highlight when touched in mobile chromium browsers */
    -webkit-tap-highlight-color: transparent;
    :hover {
-      color: ${theme.gold};
+      color: ${colors.gold};
    }
 }
 button {
@@ -79,17 +78,15 @@ button {
    margin: 1.5rem 0;
    padding: 1.2rem;
    border-radius: .5rem;
-   border: .1rem solid ${theme.gold};
+   border: .1rem solid ${colors.gold};
    background-color: transparent;
-   color: white;
+   color: ${props => props.theme.text};
    font-family: 'Raleway', san-serif;
    font-weight: 400;
    transition: transform .5s;
    :hover {
-   /* background-color: #6ea22c; */
       -webkit-transform: scale(1.05);-ms-transform: scale(1.05);
       transform: scale(1.05);
-      /* box-shadow: -0.1rem 1rem 1rem 0 rgba(255, 255, 255, 0.08); */
    }
    :focus {
       outline: none;

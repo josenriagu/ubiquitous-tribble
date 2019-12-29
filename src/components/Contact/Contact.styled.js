@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import theme from '../../styles/Theme';
+import { screens } from '../../styles/variables';
 import { beat } from './../../styles/Animations';
 
 export const ContactDiv = styled.div`
@@ -13,7 +13,7 @@ export const ContactDiv = styled.div`
     width: 20%;
     display: flex;
     justify-content: space-between;
-    @media ${theme.mobile} {
+    @media ${screens.mobile} {
       width: 55%;
     }
     span {

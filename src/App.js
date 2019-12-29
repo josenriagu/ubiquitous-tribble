@@ -26,7 +26,7 @@ function App() {
           <Header theme={theme} />
           <About />
           <Stack />
-          <Projects />
+          <Projects theme={theme} />
           <Contact />
           <Footer theme={theme} toggleTheme={toggleTheme} />
         </AppDiv>

@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 
-import theme from '../../styles/Theme';
+import { screens, colors } from '../../styles/variables';
 
 export const AppFooter = styled.footer`
   margin-top: 10rem;
   padding: 3rem 0 5rem 0;
+  #switch {
+    cursor: pointer;
+    text-decoration: underline;
+    -webkit-tap-highlight-color: transparent;
+  }
   a {
-    color: ${theme.gold};
+    color: ${colors.gold};
   }
   text-align: center;
   h5 {
@@ -19,7 +24,7 @@ export const AppFooter = styled.footer`
     justify-content: space-around;
     margin: 0 auto;
     width: 80%;
-    @media ${theme.mobile} {
+    @media ${screens.mobile} {
       width: 100%;
       justify-content: center;
       flex-wrap: wrap;
