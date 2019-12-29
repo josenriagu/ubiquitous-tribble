@@ -1,6 +1,6 @@
 export const projectList = [
   {
-    src: "/screenshots/naijaworks.png",
+    src: "/assets/screenshots/naijaworks.png",
     href: "https://naijaworks.xyz",
     title: "Naija Works",
     description: "Intuitive showcase for Nigerian tech talents",
@@ -11,7 +11,7 @@ export const projectList = [
     codebase: "https://github.com/NaijaWorks"
   },
   {
-    src: "/screenshots/pluto.png",
+    src: "/assets/screenshots/pluto.png",
     href: "https://getpluto.netlify.com",
     title: "Pluto",
     description: "Create quizzes for your team. Get real-time progress updates",
@@ -22,7 +22,7 @@ export const projectList = [
     codebase: "https://github.com/webeu3-pluto"
   },
   {
-    src: "/screenshots/anywherefitness.png",
+    src: "/assets/screenshots/anywherefitness.png",
     href: "https://anywherelanding.now.sh/",
     title: "Anywhere Fitness",
     description: "Fitness class scheduling and discovery for instructors and clients",
@@ -33,7 +33,7 @@ export const projectList = [
     codebase: "https://github.com/BW-Anywhere-Fitness-Nov-18-22"
   },
   {
-    src: "/screenshots/soupkitchen.png",
+    src: "/assets/screenshots/soupkitchen.png",
     href: "https://skim.netlify.com",
     title: "Soup Kitchen",
     description: "Soup kitchen inventory management for soup kitchen owners",
@@ -44,7 +44,7 @@ export const projectList = [
     codebase: "https://github.com/josenriagu/soup-kitchen-inventory"
   },
   {
-    src: "/screenshots/refugeestories.png",
+    src: "/assets/screenshots/refugeestories.png",
     href: "https://bwrefugeestories.now.sh",
     title: "Refugee Stories",
     description: "Collection of Refugee stories. Get inspired to Volunteer in an aid",
@@ -55,7 +55,7 @@ export const projectList = [
     codebase: "https://github.com/BW-Refugee-Stories-Oct-21-25"
   },
   {
-    src: "/screenshots/chefportfolio.png",
+    src: "/assets/screenshots/chefportfolio.png",
     href: "https://bwchefportfolio.now.sh",
     title: "Chef Portfolio",
     description: "Draw inspirations from curated portfolio of best chefs in your locality",
@@ -66,7 +66,7 @@ export const projectList = [
     codebase: "https://github.com/BW-Refugee-Stories-Oct-21-25"
   },
   {
-    src: "/screenshots/paltreev.jpg",
+    src: "/assets/screenshots/paltreev.jpg",
     href: "https://paltreev.com",
     title: "Paltreev",
     description: "Location-based skill sharing and businesss discovery network",
@@ -77,7 +77,7 @@ export const projectList = [
     codebase: ""
   },
   {
-    src: "/screenshots/royalgatsby.jpg",
+    src: "/assets/screenshots/royalgatsby.jpg",
     href: "https://royalgatsby.com",
     title: "Royal Gatsby",
     description: "E-commerce fashion store",
@@ -88,7 +88,7 @@ export const projectList = [
     codebase: ""
   },
   {
-    src: "/screenshots/nkutheatre.jpg",
+    src: "/assets/screenshots/nkutheatre.jpg",
     href: "https://nkutheatre.com",
     title: "Nku Theatre",
     description: "Magazine blog",
@@ -99,7 +99,7 @@ export const projectList = [
     codebase: ""
   },
   {
-    src: "/screenshots/uberboytrend.png",
+    src: "/assets/screenshots/uberboytrend.png",
     href: "https://uberboytrend.com",
     title: "Uberboy Trend",
     description: "E-commerce fashion store",
@@ -110,7 +110,7 @@ export const projectList = [
     codebase: ""
   },
   {
-    src: "/screenshots/flexushotels.jpg",
+    src: "/assets/screenshots/flexushotels.jpg",
     href: "https://flexushotels.com",
     title: "Flexus Hotels",
     description: "Hotel booking management",
@@ -121,7 +121,7 @@ export const projectList = [
     codebase: ""
   },
   {
-    src: "/screenshots/mainmarket.jpg",
+    src: "/assets/screenshots/mainmarket.jpg",
     href: "https://mainmarketonline.com",
     title: "Mainmarket Online",
     description: "Multi-vendor E-commerce store",
@@ -132,7 +132,7 @@ export const projectList = [
     codebase: ""
   },
   {
-    src: "/screenshots/hubrisconsult.png",
+    src: "/assets/screenshots/hubrisconsult.png",
     href: "https://hubrisconsult.com",
     title: "Hubris Consult",
     description: "Web design and digital marketing agency",
