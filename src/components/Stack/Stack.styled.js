@@ -4,11 +4,10 @@ import { xdBounce, xmBounce, yBounce } from '../../styles/Animations';
 import theme from '../../styles/Theme';
 
 export const style = {
-  "font-size": "5rem"
+  "fontSize": "5rem"
 }
 
 export const StackDiv = styled.div`
-  padding-bottom: 10rem;
   margin-top: 10rem;
   padding-top: 3rem;
   h2, p {

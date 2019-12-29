@@ -32,8 +32,5 @@ export const AboutDiv = styled.div`
     @media ${theme.mobile} {
       width: 100%;
     }
-    h1 {
-      font-size: 4rem;
-    }
   }
 `;
