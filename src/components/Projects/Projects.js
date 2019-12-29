@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { projectList } from './projectList';
 import { ProjectDiv } from './Projects.styled';
 
-const Projects = () => {
+const Projects = ({ theme }) => {
 
   useEffect(() => {
     const wrapper = document.querySelector('.projects-wrapper');
@@ -36,7 +36,7 @@ const Projects = () => {
   }, [])
 
   return (
-    <ProjectDiv id="projects">
+    <ProjectDiv id="projects" checker={theme}>
       <h2>Projects</h2>
       <p>I spend a couple hours (maybe more <span role="img" aria-label="face with tears of joy">😂</span>) with my team, on the keyboard, in front of the screen. Hours translate to days, then weeks, months even before reality takes over these projects</p>
       <div className="projects-wrapper">

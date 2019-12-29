@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import theme from '../../styles/Theme';
+import { screens, colors } from '../../styles/variables';
 
 export const ProjectDiv = styled.div`
   margin-top: 10rem;
@@ -24,8 +24,8 @@ export const ProjectDiv = styled.div`
       display: none;
     }
     div {
-      background: ${theme.primaryLight};
-      border-radius: .5rem;
+      background: ${props => props.theme.project};
+      border-radius: .8rem;
       width: 30%;
       height: 58vh;
       margin: 0 .5rem;
@@ -35,16 +35,19 @@ export const ProjectDiv = styled.div`
       flex-direction: column;
       justify-content: space-between;
       flex: 0 0 auto;
-      @media ${theme.mobile} {
+      @media ${screens.mobile} {
         display: flex;
         width: 87%;
       }
       img {
         width: 100%;
+        border-radius: .8rem .8rem 0 0;
+        border: ${(props) => props.checker === 'light' ? `.1rem solid ${colors.gold}` : 'none'} ;
+        border-bottom: none;
       }
       i {
         font-size: 1.6rem;
-        color: ${theme.gold};
+        color: ${colors.gold};
         margin: .5rem 0;
       }
       h4, p, span {

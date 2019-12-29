@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import { bounce, beat } from '../../styles/Animations';
-import theme from '../../styles/Theme';
+import { screens } from '../../styles/variables';
 
 export const AppHeader = styled.header`
   width: 100%;
@@ -13,7 +13,6 @@ export const AppHeader = styled.header`
   padding: 1rem;
   div:last-child {
     text-align: center;
-    color: white;
     margin-bottom: 20rem;
     img#mouse {
       width: 2rem;
@@ -32,7 +31,7 @@ export const AppHeader = styled.header`
       :hover {
         opacity: 1;
       }
-      @media ${theme.mobile} {
+      @media ${screens.mobile} {
         display: none !important;
       }
     }

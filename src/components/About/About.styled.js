@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import theme from '../../styles/Theme';
+import { screens } from '../../styles/variables';
 
 export const AboutDiv = styled.div`
   margin-top: 10rem;
@@ -8,7 +8,7 @@ export const AboutDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media ${theme.mobile} {
+  @media ${screens.mobile} {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -17,7 +17,7 @@ export const AboutDiv = styled.div`
     width: 48%;
     height: 80vh;
     position: relative;
-    @media ${theme.mobile} {
+    @media ${screens.mobile} {
       width: 100%;
       height: 50vh;
     }
@@ -29,7 +29,7 @@ export const AboutDiv = styled.div`
   }
   div:nth-child(2){
     width: 40%;
-    @media ${theme.mobile} {
+    @media ${screens.mobile} {
       width: 100%;
     }
   }

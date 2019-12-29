@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import { rotate, beat } from '../../styles/Animations';
-import theme from '../../styles/Theme';
+import { screens } from '../../styles/variables';
 
 const animations = [rotate, beat];
 const randAnimation = animations[Math.floor(Math.random() * animations.length)];
@@ -28,7 +28,7 @@ export const HeaderDiv = styled.div`
     width: 40%;
     display: flex;
     justify-content: space-between;
-    @media ${theme.mobile} {
+    @media ${screens.mobile} {
       display: none !important;
     }
   }
@@ -36,12 +36,12 @@ export const HeaderDiv = styled.div`
 
 export const MobileNav = styled.nav`
   display: none;
-  @media ${theme.mobile}{
+  @media ${screens.mobile}{
   width: 100%;
-  border-top: .05rem solid white;
+  border-top: .05rem solid ${props => props.theme.text};
   padding: 1.3rem 2.5rem;
   position: fixed;
-  background-color: #000000;
+  background-color: ${props => props.theme.body};
   display: flex;
   justify-content: space-between;
   bottom: 0;
