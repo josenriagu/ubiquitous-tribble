@@ -4,6 +4,7 @@ import GlobalStyle from './styles/GlobalStyles';
 import Header from './components/Header';
 import About from './components/About';
 import Stack from './components/Stack';
+import Projects from './components/Projects';
 import { AppDiv } from './App.styled';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <About />
         <Stack />
+        <Projects />
       </AppDiv>
     </>
   );
