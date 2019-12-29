@@ -1,16 +1,12 @@
 
-export const sizes = {
-  desktop: "1000px",
-  mobile: "500px",
-  mobileRes: "345px"
+export const lightTheme = {
+  body: '#ffffff',
+  text: '#000000',
+  project: '#aaaaaa'
 }
 
-const theme = {
-  mobile: `(max-width: ${sizes.mobile})`,
-  gold: '#c6930a',
-  primaryDark: '#0d0c1d',
-  primaryLight: '#25292c',
-  primaryHover: '#343078'
+export const darkTheme = {
+  body: '#000000',
+  text: '#ffffff',
+  project: '#25292c'
 }
-
-export default theme;
