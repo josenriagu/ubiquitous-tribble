@@ -6,7 +6,6 @@ import { beat } from './../../styles/Animations';
 export const ContactDiv = styled.div`
   margin-top: 10rem;
   padding-top: 3rem;
-  padding-bottom: 10rem;
   h2 {
     text-align: right;
   }
