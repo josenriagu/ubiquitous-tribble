@@ -49,6 +49,11 @@ h4 {
    font-size: 1.75rem;
    margin: 1.5rem 0 0 0;
 }
+h5 {
+   font-size: 1.4rem;
+   font-weight: 400;
+   margin: 0;
+}
 p, ul, li, span, label {
    font-size: 1.6rem;
 }

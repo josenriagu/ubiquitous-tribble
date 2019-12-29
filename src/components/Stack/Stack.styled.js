@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import { xdBounce, xmBounce, yBounce } from '../../styles/Animations';
 import theme from '../../styles/Theme';
+import { xdBounce, xmBounce, yBounce } from '../../styles/Animations';
 
 export const style = {
   "fontSize": "5rem"

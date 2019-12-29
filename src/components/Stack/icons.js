@@ -15,11 +15,11 @@ export const icon = [
     class: "devicon-react-plain colored"
   },
   {
-    src: "/icons/styled-components.png",
+    src: "/assets/icons/styled-components.png",
     alt: "styled-components"
   },
   {
-    src: "/icons/redux.png",
+    src: "/assets/icons/redux.png",
     alt: "redux"
   },
   {
@@ -29,11 +29,11 @@ export const icon = [
     class: "devicon-express-original"
   },
   {
-    src: "/icons/graphql.png",
+    src: "/assets/icons/graphql.png",
     alt: "graphql"
   },
   {
-    src: "/icons/sqlite.png",
+    src: "/assets/icons/sqlite.png",
     alt: "sqlite"
   },
   {
@@ -43,7 +43,7 @@ export const icon = [
     class: "devicon-mongodb-plain colored"
   },
   {
-    src: "/icons/python.png",
+    src: "/assets/icons/python.png",
     alt: "python"
   },
   {
@@ -59,7 +59,7 @@ export const icon = [
     class: "devicon-gitlab-plain colored"
   },
   {
-    src: "/icons/netlify.png",
+    src: "/assets/icons/netlify.png",
     alt: "netlify"
   },
   {
