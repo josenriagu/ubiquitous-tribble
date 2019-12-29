@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 
 import theme from '../../styles/Theme';
-import { beat } from './../../styles/Animations';
 
 export const ProjectDiv = styled.div`
   margin-top: 10rem;
   padding-top: 3rem;
-  padding-bottom: 10rem;
   div .active {
     background: rgba(255,255,255,0.3);
     cursor: grabbing;
@@ -53,12 +51,15 @@ export const ProjectDiv = styled.div`
         padding: 0 1rem;
       }
       h4 {
-        animation: ${beat} 2s ease infinite;
+        text-decoration: underline;
       }
       span {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        img {
+          width: 2rem;
+        }
         p {
           margin: 0 .8rem 0 0;
         }

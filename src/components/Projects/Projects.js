@@ -58,9 +58,11 @@ const Projects = () => {
                   <i className="fas fa-users"></i>
                   <p>{project.team}</p>
                   <i className="devicon-git-plain" ></i>
-                  <a href={project.codebase} target="_blank" rel="noopener noreferrer">
-                    <p>{project.codebase !== "" ? "Codebase" : "Private"}</p>
-                  </a>
+                  {
+                    project.codebase !== "" ? <a href={project.codebase} target="_blank" rel="noopener noreferrer">
+                      <p>Codebase</p>
+                    </a> : <p>Private</p>
+                  }
                 </span>
               </div>
             );

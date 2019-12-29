@@ -41,7 +41,7 @@ export const projectList = [
     role: "Frontend",
     duration: "05 days",
     team: 1,
-    codebase: "https://github.com/josenriagu/soup-kitchen-inventory"
+    codebase: "https://gitlab.com/josenriagu/soup-kitchen-inventory"
   },
   {
     src: "/assets/screenshots/refugeestories.png",
