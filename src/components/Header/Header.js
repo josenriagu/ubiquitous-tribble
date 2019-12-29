@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import useInterval from '../../hooks/useInterval';
 import NavBar from './NavBar';
@@ -14,6 +14,22 @@ function Header() {
     name === "Josemaria Nriagu" ? setName(el) : setName(name + el);
   }, 500);
 
+  useEffect(() => {
+    window.addEventListener('scroll', () => scroll());
+
+    // Define scroll behaviour
+    const scroll = () => {
+      const scrollButton = document.querySelector('#scroll');
+      console.log(scrollButton);
+      // condition to check for scrolled height
+      if (window.scrollY > 600 || document.documentElement.scrollY > 600) {
+        scrollButton.style.display = 'block';
+      } else {
+        scrollButton.style.display = 'none';
+      }
+    }
+  }, [])
+
   return (
     <AppHeader id="home">
       <NavBar />
@@ -21,7 +37,10 @@ function Header() {
         <h1>{name}</h1>
         <h3>Team-Oriented Software Engineer</h3>
         <a href="#about">
-          <img src="/mouse_icon.png" alt="mouse scroll" />
+          <img id="mouse" src="/mouse_icon.png" alt="mouse scroll" />
+        </a>
+        <a href="#home">
+          <img id="scroll" src="/up-arrow.png" alt="scroll up" />
         </a>
       </div>
     </AppHeader>
