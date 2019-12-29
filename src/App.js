@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+
+import { lightTheme, darkTheme } from './styles/Theme';
 
 import GlobalStyle from './styles/GlobalStyles';
 import Header from './components/Header';
@@ -10,18 +13,25 @@ import Footer from './components/Footer';
 import { AppDiv } from './App.styled';
 
 function App() {
+
+  const [theme, setTheme] = useState('dark')
+
+  const toggleTheme = () => (theme === 'light') ? setTheme('dark') : setTheme('light');
+
   return (
-    <>
-      <GlobalStyle h1 />
-      <AppDiv>
-        <Header />
-        <About />
-        <Stack />
-        <Projects />
-        <Contact />
-        <Footer />
-      </AppDiv>
-    </>
+    <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
+      <>
+        <GlobalStyle h1 />
+        <AppDiv>
+          <Header theme={theme} />
+          <About />
+          <Stack />
+          <Projects />
+          <Contact />
+          <Footer theme={theme} toggleTheme={toggleTheme} />
+        </AppDiv>
+      </>
+    </ThemeProvider>
   );
 }
 
