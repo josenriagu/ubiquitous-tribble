@@ -40,12 +40,14 @@ h3 {
    font-size: calc(1.5 * 2.4rem);
    margin-bottom: 0;
    font-weight: 400;
+   color: white;
    @media ${theme.mobile}{
       font-size: calc(0.8 * 2.4rem);
    }
 }
 h4 {
    font-size: 1.75rem;
+   margin: 1.5rem 0 0 0;
 }
 p, ul, li, span, label {
    font-size: 1.6rem;

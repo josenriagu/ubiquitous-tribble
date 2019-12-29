@@ -9,7 +9,7 @@ const theme = {
   mobile: `(max-width: ${sizes.mobile})`,
   gold: '#c6930a',
   primaryDark: '#0d0c1d',
-  primaryLight: '#effffa',
+  primaryLight: '#25292c',
   primaryHover: '#343078'
 }
 
