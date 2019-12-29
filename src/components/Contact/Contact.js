@@ -17,7 +17,7 @@ const Contact = () => {
       <div>
         {
           handles.map((handle, idx) =>
-            <span id={idx}>
+            <span key={idx}>
               <a href={handle.href} target="_blank" rel="noopener noreferrer">
                 <img src={handle.src} alt={handle.alt} />
               </a>
