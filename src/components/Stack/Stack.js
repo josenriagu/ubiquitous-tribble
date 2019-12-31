@@ -5,7 +5,7 @@ import { StackDiv, style } from './Stack.styled';
 
 const Stack = () => {
   return (
-    <StackDiv id="stack">
+    <StackDiv data-testid="stack" id="stack">
       <h2>Stack</h2>
       <p>I code and play with a couple of programming languages, frameworks, tools and technologies</p>
       <div>

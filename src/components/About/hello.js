@@ -26,6 +26,8 @@ const say = new Human({
 
 function tempAlert(message, duration) {
   let p = document.createElement('p');
+  // add a data-testid attribute; useful when testing for the element
+  p.setAttribute('data-testid', 'message')
   p.innerText = message;
   let el = document.getElementById("greet");
   let button = document.getElementById("button");
