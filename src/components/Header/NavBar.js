@@ -12,14 +12,14 @@ function NavBar() {
             <img src={logo} alt="Josemaria Nriagu" />
           </a>
         </div>
-        <nav>
+        <nav data-testid="desktopNav">
           <a href="#about">About</a>
           <a href="#stack">Stack</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
       </HeaderDiv>
-      <MobileNav>
+      <MobileNav data-testid="mobileNav">
         <a href="#home">
           <i className="fas fa-home fa-1x"></i>
         </a>

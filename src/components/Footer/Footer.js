@@ -7,7 +7,7 @@ const Footer = ({ theme, toggleTheme }) => {
   const year = new Date().getFullYear();
 
   return (
-    <AppFooter>
+    <AppFooter data-testid="footer">
       <p>&copy; {year} Josemaria Nriagu. Design inspired by <a href="https://instagram.com/ugoezenduka" target="_blank" rel="noopener noreferrer">Ugo</a> </p>
       <p>Built with <span role="img" aria-label="red heart">❤️</span> <i className="devicon-react-original colored"></i><span role="img" aria-label="styled components, wine and pizza"> 💅 🍷 and 🍕</span></p>
       <p id="switch" onClick={toggleTheme}>Switch to {theme === 'dark' ? 'light' : 'dark'} mode</p>

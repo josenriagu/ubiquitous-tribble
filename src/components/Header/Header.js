@@ -36,7 +36,7 @@ function Header({ theme }) {
   return (
     <AppHeader id="home">
       <NavBar />
-      <div>
+      <div data-testid="nameplate">
         <h1>{name}</h1>
         <h3>Team-Oriented Software Engineer</h3>
         <a href="#about">

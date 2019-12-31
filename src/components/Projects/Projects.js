@@ -39,7 +39,7 @@ const Projects = ({ theme }) => {
     <ProjectDiv id="projects" checker={theme}>
       <h2>Projects</h2>
       <p>I spend a couple hours (maybe more <span role="img" aria-label="face with tears of joy">😂</span>) with my team, on the keyboard, in front of the screen. Hours translate to days, then weeks, months even before reality takes over these projects</p>
-      <div className="projects-wrapper">
+      <div data-testid="projects-wrapper" className="projects-wrapper">
         {
           projectList.map((project, idx) => {
             return (

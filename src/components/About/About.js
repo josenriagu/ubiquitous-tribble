@@ -5,7 +5,7 @@ import { AboutDiv } from './About.styled';
 
 const About = () => {
   return (
-    <AboutDiv id="about">
+    <AboutDiv id="about" data-testid="about">
       <div>
         <img src="/code.png" alt="gallery visit" />
       </div>
