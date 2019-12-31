@@ -63,6 +63,10 @@ const Projects = ({ theme }) => {
                       <p>Codebase</p>
                     </a> : <p>Private</p>
                   }
+                  {
+                    project.mobileReady === true ? <i className="fas fa-mobile-alt"></i> : <i className="fas fa-mobile"></i>
+                  }
+                  {project.mobileReady && <p>Mobile ready</p>}
                 </span>
               </div>
             );

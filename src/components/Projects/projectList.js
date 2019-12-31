@@ -8,7 +8,8 @@ export const projectList = [
     role: "Backend",
     duration: "07 days",
     team: 3,
-    codebase: "https://github.com/NaijaWorks"
+    codebase: "https://github.com/NaijaWorks",
+    mobileReady: true
   },
   {
     src: "/assets/screenshots/pluto.png",
@@ -19,7 +20,8 @@ export const projectList = [
     role: "Backend",
     duration: "11 days",
     team: 3,
-    codebase: "https://github.com/webeu3-pluto"
+    codebase: "https://github.com/webeu3-pluto",
+    mobileReady: true
   },
   {
     src: "/assets/screenshots/anywherefitness.png",
@@ -30,7 +32,8 @@ export const projectList = [
     role: "Teamlead",
     duration: "05 days",
     team: 7,
-    codebase: "https://github.com/BW-Anywhere-Fitness-Nov-18-22"
+    codebase: "https://github.com/BW-Anywhere-Fitness-Nov-18-22",
+    mobileReady: false
   },
   {
     src: "/assets/screenshots/soupkitchen.png",
@@ -41,7 +44,8 @@ export const projectList = [
     role: "Frontend",
     duration: "05 days",
     team: 1,
-    codebase: "https://gitlab.com/josenriagu/soup-kitchen-inventory"
+    codebase: "https://gitlab.com/josenriagu/soup-kitchen-inventory",
+    mobileReady: true
   },
   {
     src: "/assets/screenshots/refugeestories.png",
@@ -52,7 +56,20 @@ export const projectList = [
     role: "Teamlead",
     duration: "05 days",
     team: 5,
-    codebase: "https://github.com/BW-Refugee-Stories-Oct-21-25"
+    codebase: "https://github.com/BW-Refugee-Stories-Oct-21-25",
+    mobileReady: true
+  },
+  {
+    src: "/assets/screenshots/lambdagram.png",
+    href: "https://lambdagram.netlify.com",
+    title: "Instagram Clone",
+    description: "Intuitive clone of Instagram UI using React's HOC",
+    stack: "Built with: React ∙ Styled Components",
+    role: "Frontend",
+    duration: "04 days",
+    team: 1,
+    codebase: "https://github.com/josenriagu/React-Insta-Clone",
+    mobileReady: false
   },
   {
     src: "/assets/screenshots/chefportfolio.png",
@@ -63,7 +80,20 @@ export const projectList = [
     role: "Teamlead",
     duration: "05 days",
     team: 7,
-    codebase: "https://github.com/BW-Refugee-Stories-Oct-21-25"
+    codebase: "https://github.com/BW-Refugee-Stories-Oct-21-25",
+    mobileReady: false
+  },
+  {
+    src: "/assets/screenshots/chargescreen.png",
+    href: "https://chargescreen.netlify.coom",
+    title: "OneUI Charge screen",
+    description: "Inspired by the interactive charge screen of Samsung OneUI",
+    stack: "Built with: React",
+    role: "Frontend",
+    duration: "01 m.hrs",
+    team: 1,
+    codebase: "https://github.com/josenriagu/chargescreen",
+    mobileReady: true
   },
   {
     src: "/assets/screenshots/paltreev.jpg",
@@ -74,7 +104,8 @@ export const projectList = [
     role: "Frontend",
     duration: "ongoing",
     team: 2,
-    codebase: ""
+    codebase: "",
+    mobileReady: true
   },
   {
     src: "/assets/screenshots/royalgatsby.jpg",
@@ -85,7 +116,8 @@ export const projectList = [
     role: "Designer",
     duration: "72 m.hrs",
     team: 1,
-    codebase: ""
+    codebase: "",
+    mobileReady: true
   },
   {
     src: "/assets/screenshots/nkutheatre.jpg",
@@ -96,7 +128,8 @@ export const projectList = [
     role: "Designer",
     duration: "37 m.hrs",
     team: 1,
-    codebase: ""
+    codebase: "",
+    mobileReady: true
   },
   {
     src: "/assets/screenshots/uberboytrend.png",
@@ -107,7 +140,8 @@ export const projectList = [
     role: "Designer",
     duration: "70 m.hrs",
     team: 1,
-    codebase: ""
+    codebase: "",
+    mobileReady: true
   },
   {
     src: "/assets/screenshots/flexushotels.jpg",
@@ -118,7 +152,8 @@ export const projectList = [
     role: "Designer",
     duration: "72 m.hrs",
     team: 1,
-    codebase: ""
+    codebase: "",
+    mobileReady: true
   },
   {
     src: "/assets/screenshots/mainmarket.jpg",
@@ -129,7 +164,8 @@ export const projectList = [
     role: "Designer",
     duration: "89 m.hrs",
     team: 1,
-    codebase: ""
+    codebase: "",
+    mobileReady: true
   },
   {
     src: "/assets/screenshots/hubrisconsult.png",
@@ -140,6 +176,7 @@ export const projectList = [
     role: "Designer",
     duration: "64 m.hrs",
     team: 1,
-    codebase: ""
+    codebase: "",
+    mobileReady: true
   }
 ]
