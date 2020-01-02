@@ -39,7 +39,7 @@ export const MobileNav = styled.nav`
   @media ${screens.mobile}{
   width: 100%;
   border-top: .05rem solid ${props => props.theme.text};
-  padding: 1.3rem 2.5rem;
+  padding: 1rem 2.5rem;
   position: fixed;
   background-color: ${props => props.theme.body};
   display: flex;
@@ -47,5 +47,14 @@ export const MobileNav = styled.nav`
   bottom: 0;
   left: 0;
   z-index: 99;
+  a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+    i {
+      font-size: 1.6rem;
+    }
+  }
   }
 `;

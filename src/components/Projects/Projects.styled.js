@@ -64,6 +64,7 @@ export const ProjectDiv = styled.div`
           width: 2rem;
         }
         p {
+          padding: 0 .83rem;
           margin: 0 .8rem 0 0;
         }
       }
