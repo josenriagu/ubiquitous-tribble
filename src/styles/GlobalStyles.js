@@ -17,7 +17,7 @@ body{
    color: ${(props) => props.theme.text};
    text-align: left;
    margin: 0;
-   font-family: -apple-system, BlinkMacSystemFont, 'Raleway', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+   font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
 }
@@ -41,7 +41,7 @@ h3 {
    margin-bottom: 0;
    font-weight: 400;
    @media ${screens.mobile}{
-      font-size: calc(0.8 * 2.4rem);
+      font-size: calc(0.7 * 2.4rem);
    }
 }
 h4 {
@@ -81,7 +81,7 @@ button {
    border: .1rem solid ${colors.gold};
    background-color: transparent;
    color: ${props => props.theme.text};
-   font-family: 'Raleway', san-serif;
+   font-family: 'Montserrat', san-serif;
    font-weight: 400;
    transition: transform .5s;
    :hover {
