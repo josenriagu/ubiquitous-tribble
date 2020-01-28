@@ -5,9 +5,8 @@ import { screens, colors } from '../../styles/variables';
 export const AppFooter = styled.footer`
   margin-top: 10rem;
   padding: 3rem 0 5rem 0;
-  #switch {
+  .switch {
     cursor: pointer;
-    text-decoration: underline;
     -webkit-tap-highlight-color: transparent;
   }
   a {
@@ -22,7 +21,7 @@ export const AppFooter = styled.footer`
   div {
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 1.6rem auto 0;
     width: 80%;
     @media ${screens.mobile} {
       width: 100%;
