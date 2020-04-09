@@ -1,6 +1,6 @@
 // Create global styles using styled components to be injected into components.
-import { createGlobalStyle } from 'styled-components';
-import { screens, colors } from './variables';
+import { createGlobalStyle } from "styled-components";
+import { screens, colors } from "./variables";
 
 const GlobalStyle = createGlobalStyle`
 :root {
@@ -25,13 +25,13 @@ h1 {
    font-size: calc(2.5*3.2rem);
    margin: 0;
    font-weight: 400;
-   color: ${props => (props.h1 ? `${colors.gold}` : props.theme.text)};
+   color: ${(props) => (props.h1 ? `${colors.gold}` : props.theme.text)};
    @media ${screens.mobile}{
       font-size: calc(2.0*3.2rem);
    }
 }
 h2 {
-   font-size: 3.5rem;
+   font-size: 4.2rem;
    margin-top: 1rem;
    font-weight: 400;
    color: ${colors.gold}
@@ -80,7 +80,7 @@ button {
    border-radius: .5rem;
    border: .1rem solid ${colors.gold};
    background-color: transparent;
-   color: ${props => props.theme.text};
+   color: ${(props) => props.theme.text};
    font-family: 'Montserrat', san-serif;
    font-weight: 400;
    transition: transform .5s;
