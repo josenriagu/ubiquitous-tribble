@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { bounce, beat } from '../../styles/Animations';
-import { screens } from '../../styles/variables';
+import { bounce, beat } from "../../styles/Animations";
+import { screens } from "../../styles/variables";
 
 export const AppHeader = styled.header`
   width: 100%;
@@ -9,11 +9,22 @@ export const AppHeader = styled.header`
   flex-direction: column;
   justify-content: space-between;
   height: 85vh;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   padding: 1rem;
   div:last-child {
     text-align: center;
     margin-bottom: 20rem;
+    .typer {
+      margin-top: 2.4rem;
+    }
+    span {
+      font-size: calc(1.5 * 2.4rem);
+      // margin: 3.6rem 0 0;
+      font-weight: 400;
+      @media ${screens.mobile} {
+        font-size: calc(0.7 * 2.4rem);
+      }
+    }
     img#mouse {
       width: 2rem;
       position: absolute;
@@ -26,7 +37,7 @@ export const AppHeader = styled.header`
       right: 2rem;
       position: fixed;
       z-index: 999;
-      opacity: .4;
+      opacity: 0.4;
       animation: ${beat} 3s ease infinite;
       :hover {
         opacity: 1;
