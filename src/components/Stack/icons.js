@@ -65,4 +65,4 @@ export const icon = [
   {
     class: "devicon-heroku-line colored"
   }
-]
+];

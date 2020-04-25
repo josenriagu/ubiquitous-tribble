@@ -28,6 +28,8 @@ describe('Test suite for About', () => {
   it('dislays message when button is clicked', async () => {
     const { getByText, getByTestId } = render(<About />);
     fireEvent.click(getByText('say.hello()'));
-    expect(await waitForElement(() => getByTestId('message'))).toBeInTheDocument();
+    expect(
+      await waitForElement(() => getByTestId('message'))
+    ).toBeInTheDocument();
   });
 });

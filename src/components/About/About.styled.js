@@ -27,7 +27,7 @@ export const AboutDiv = styled.div`
       height: 100%;
     }
   }
-  div:nth-child(2){
+  div:nth-child(2) {
     width: 40%;
     @media ${screens.mobile} {
       width: 100%;

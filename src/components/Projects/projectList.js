@@ -51,7 +51,8 @@ export const projectList = [
     src: "/assets/screenshots/refugeestories.png",
     href: "https://bwrefugeestories.now.sh",
     title: "Refugee Stories",
-    description: "Collection of Refugee stories. Get inspired to volunteer in an aid",
+    description:
+      "Collection of Refugee stories. Get inspired to volunteer in an aid",
     stack: "Built with: React ∙ Redux ∙ Node ∙ Express ∙ PostgreSQL",
     role: "Teamlead",
     duration: "05 days",
@@ -75,7 +76,8 @@ export const projectList = [
     src: "/assets/screenshots/chefportfolio.png",
     href: "https://bwchefportfolio.now.sh",
     title: "Chef Portfolio",
-    description: "Draw inspirations from portfolios of best chefs in your locality",
+    description:
+      "Draw inspirations from portfolios of best chefs in your locality",
     stack: "Built with: React ∙ Redux ∙ Node ∙ Express ∙ PostgreSQL",
     role: "Teamlead",
     duration: "05 days",
@@ -179,4 +181,4 @@ export const projectList = [
     codebase: "",
     mobileReady: true
   }
-]
+];
