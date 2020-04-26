@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const FormWrapper = styled.form`
   width: 70%;
@@ -38,7 +38,7 @@ export const FormWrapper = styled.form`
   }
   button {
     width: 25%;
-    margin: 1.5rem auto;
+    margin: 3.5rem auto 1.5rem;
     @media (max-width: 500px) {
       width: 50%;
     }
