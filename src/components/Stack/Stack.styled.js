@@ -4,13 +4,14 @@ import { screens } from '../../styles/variables';
 import { xdBounce, xmBounce, yBounce } from '../../styles/Animations';
 
 export const style = {
-  "fontSize": "5rem"
-}
+  fontSize: '5rem'
+};
 
 export const StackDiv = styled.div`
   margin-top: 10rem;
   padding-top: 3rem;
-  h2, p {
+  h2,
+  p {
     text-align: right;
   }
   div {
@@ -205,7 +206,8 @@ export const StackDiv = styled.div`
         animation: ${yBounce} 13.5s ease-in-out infinite alternate;
       }
     }
-    img, i {
+    img,
+    i {
       position: absolute;
       width: 5rem;
       height: 5rem;

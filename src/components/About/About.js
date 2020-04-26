@@ -11,11 +11,18 @@ const About = () => {
       </div>
       <div id="greet">
         <h2>About me</h2>
-        <p>Curious? Click on the button below and I will say hello <span role="img" aria-label="smiling face with sunglasses">😎</span></p>
-        <button id="button" onClick={() => say.hello()}>say.hello()</button>
+        <p>
+          Curious? Click on the button below and I will say hello{' '}
+          <span role="img" aria-label="smiling face with sunglasses">
+            😎
+          </span>
+        </p>
+        <button id="button" onClick={() => say.hello()}>
+          say.hello()
+        </button>
       </div>
     </AboutDiv>
   );
-}
+};
 
 export default About;

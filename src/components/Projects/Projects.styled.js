@@ -6,7 +6,7 @@ export const ProjectDiv = styled.div`
   margin-top: 10rem;
   padding-top: 3rem;
   div .active {
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     cursor: grabbing;
     cursor: -webkit-grabbing;
     transform: scale(1);
@@ -25,10 +25,10 @@ export const ProjectDiv = styled.div`
     }
     div {
       background: ${props => props.theme.project};
-      border-radius: .8rem;
+      border-radius: 0.8rem;
       width: 30%;
       height: 58vh;
-      margin: 0 .5rem;
+      margin: 0 0.5rem;
       padding-bottom: 2rem;
       align-items: flex-start;
       display: flex;
@@ -41,16 +41,19 @@ export const ProjectDiv = styled.div`
       }
       img {
         width: 100%;
-        border-radius: .8rem .8rem 0 0;
-        border: ${(props) => props.checker === 'light' ? `.1rem solid ${colors.gold}` : 'none'} ;
+        border-radius: 0.8rem 0.8rem 0 0;
+        border: ${props =>
+          props.checker === 'light' ? `.1rem solid ${colors.gold}` : 'none'};
         border-bottom: none;
       }
       i {
         font-size: 1.6rem;
         color: ${colors.gold};
-        margin: .5rem 0;
+        margin: 0.5rem 0;
       }
-      h4, p, span {
+      h4,
+      p,
+      span {
         padding: 0 1rem;
       }
       h4 {
@@ -64,8 +67,8 @@ export const ProjectDiv = styled.div`
           width: 2rem;
         }
         p {
-          padding: 0 .83rem;
-          margin: 0 .8rem 0 0;
+          padding: 0 0.83rem;
+          margin: 0 0.8rem 0 0;
         }
       }
     }

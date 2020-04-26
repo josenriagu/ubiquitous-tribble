@@ -9,7 +9,7 @@ export const ContactDiv = styled.div`
   h2 {
     text-align: right;
   }
-  div {
+  section {
     width: 20%;
     display: flex;
     justify-content: space-between;

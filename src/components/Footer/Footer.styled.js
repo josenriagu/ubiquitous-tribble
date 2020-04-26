@@ -27,10 +27,10 @@ export const AppFooter = styled.footer`
       width: 100%;
       justify-content: center;
       flex-wrap: wrap;
-      h5:nth-child(2){
+      h5:nth-child(2) {
         display: none;
       }
-      h5:nth-child(3){
+      h5:nth-child(3) {
         text-decoration: underline;
       }
     }

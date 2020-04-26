@@ -7,9 +7,10 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "antd": "^3.26.7",
+    "emailjs-com": "^2.4.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0",
+    "react-scripts": "3.4.0",
     "styled-components": "^4.4.1",
     "typed.js": "^2.0.11"
   },
@@ -36,5 +37,8 @@
   },
   "devDependencies": {
     "prettier": "^1.19.1"
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }
