@@ -11,10 +11,13 @@ class Human extends About {
     this.likes = props.likes;
   }
   hello() {
-    tempAlert(
-      `${this.intro}! My name is ${this.name}. Me love ${this.likes[0]} and ${this.likes[1]}`,
-      5000
-    );
+    tempAlert({
+      message: `${this.intro}! My name is ${this.name}. Me love ${this.likes[0]} and ${this.likes[1]}`,
+      duration: 5000,
+      attribute: 'message',
+      el: 'greet',
+      button: 'button'
+    });
   }
 }
 
@@ -24,18 +27,18 @@ const say = new Human({
   likes: ['building functional teams ❤️', 'making things work 😇']
 });
 
-function tempAlert(message, duration) {
+export function tempAlert(params) {
   let p = document.createElement('p');
   // add a data-testid attribute; useful when testing for the element
-  p.setAttribute('data-testid', 'message');
-  p.innerText = message;
-  let el = document.getElementById('greet');
-  let button = document.getElementById('button');
+  p.setAttribute('data-testid', params.attribute);
+  p.innerText = params.message;
+  let el = document.getElementById(params.el);
+  let button = document.getElementById(params.button);
 
   setTimeout(function() {
     p.parentNode.removeChild(p);
     el.appendChild(button);
-  }, duration);
+  }, params.duration);
 
   button.parentNode.removeChild(button);
   el.appendChild(p);
