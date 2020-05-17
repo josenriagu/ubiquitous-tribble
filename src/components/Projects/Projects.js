@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 
+import revertSrc from '../../utils/revert';
 import { projectList } from './projectList';
 import { ProjectDiv } from './Projects.styled';
 
@@ -50,7 +51,12 @@ const Projects = ({ theme }) => {
         {projectList.map((project, idx) => {
           return (
             <div key={idx}>
-              <img src={project.src} alt={project.title} />
+              <img
+                // fallback to load alternative image format in unsupported browsers
+                onError={e => revertSrc(e, project.dsrc)}
+                src={project.src}
+                alt={project.title}
+              />
               <a href={project.href} target="_blank" rel="noopener noreferrer">
                 <h4>{project.title}</h4>
               </a>
