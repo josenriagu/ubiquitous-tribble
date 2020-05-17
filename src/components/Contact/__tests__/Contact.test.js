@@ -1,21 +1,21 @@
-import React from "react";
-import { render, cleanup } from "@testing-library/react";
-import Contact from "../Contact";
+import React from 'react';
+import { render, cleanup } from '@testing-library/react';
+import Contact from '../Contact';
 
 afterEach(cleanup);
 
-describe("Test suite for Contact", () => {
-  it("renders the contact div", () => {
+describe('Test suite for Contact', () => {
+  it('renders the contact div', () => {
     const { getByTestId } = render(<Contact />);
-    expect(getByTestId("contact")).toBeInTheDocument();
+    expect(getByTestId('contact')).toBeInTheDocument();
   });
 
-  it("renders one of the image icons", () => {
+  it('renders one of the image icons', () => {
     const { getByAltText } = render(<Contact />);
-    expect(getByAltText("gitlab")).toBeInTheDocument();
+    expect(getByAltText('gitlab')).toBeInTheDocument();
   });
 
-  it("match snapshot", () => {
+  it('match snapshot', () => {
     const { container } = render(<Contact />);
 
     // Optional notes: matchInlineSnapshot may fail if code is not properly formatted and prettier is not installed as a dependency. Read more: https://github.com/facebook/jest/issues/8467
@@ -23,7 +23,7 @@ describe("Test suite for Contact", () => {
     expect(container).toMatchInlineSnapshot(`
       <div>
         <div
-          class="sc-bdVaJa iYhYUe"
+          class="sc-bdVaJa joSVSo"
           data-testid="contact"
           id="contact"
         >
@@ -40,7 +40,8 @@ describe("Test suite for Contact", () => {
             </span>
           </p>
           <p>
-            Need a hand on an interesting project? Let's talk. I gatchu! 
+            Need a hand on an interesting project? Let's talk. I gatchu!
+             
             <span
               aria-label="handshake"
               role="img"
@@ -53,9 +54,9 @@ describe("Test suite for Contact", () => {
             <br />
              - art, music, science, technology etc. 
             <br />
-            Connect with me on any of these platforms
+            Connect with me on any of these platforms or send a message through the form
           </p>
-          <div>
+          <section>
             <span>
               <a
                 href="https://linkedin.com/in/josemarianriagu"
@@ -64,7 +65,7 @@ describe("Test suite for Contact", () => {
               >
                 <img
                   alt="linkedin"
-                  src="/assets/icons/linkedin.png"
+                  src="https://res.cloudinary.com/thedrflynn/image/upload/v1589710385/portfolio/assets/icons/linkedin.png"
                 />
               </a>
             </span>
@@ -76,7 +77,7 @@ describe("Test suite for Contact", () => {
               >
                 <img
                   alt="twitter"
-                  src="/assets/icons/twitter.png"
+                  src="https://res.cloudinary.com/thedrflynn/image/upload/v1589710385/portfolio/assets/icons/twitter.png"
                 />
               </a>
             </span>
@@ -88,7 +89,7 @@ describe("Test suite for Contact", () => {
               >
                 <img
                   alt="gitlab"
-                  src="/assets/icons/gitlab.png"
+                  src="https://res.cloudinary.com/thedrflynn/image/upload/v1589710385/portfolio/assets/icons/gitlab.png"
                 />
               </a>
             </span>
@@ -100,7 +101,7 @@ describe("Test suite for Contact", () => {
               >
                 <img
                   alt="github"
-                  src="/assets/icons/github.png"
+                  src="https://res.cloudinary.com/thedrflynn/image/upload/v1589710385/portfolio/assets/icons/github.png"
                 />
               </a>
             </span>
@@ -112,11 +113,101 @@ describe("Test suite for Contact", () => {
               >
                 <img
                   alt="instagram"
-                  src="/assets/icons/instagram.png"
+                  src="https://res.cloudinary.com/thedrflynn/image/upload/v1589710385/portfolio/assets/icons/instagram.png"
                 />
               </a>
             </span>
-          </div>
+          </section>
+          <form
+            class="sc-bwzfXH cnBTQZ"
+          >
+            <div
+              id="contact-form"
+            >
+              <section>
+                <label
+                  for="firstname"
+                >
+                  First Name 
+                  <sup>
+                    *
+                  </sup>
+                </label>
+                <input
+                  autocomplete="firstname"
+                  id="firstname"
+                  placeholder="James"
+                  required=""
+                  type="text"
+                />
+              </section>
+              <section>
+                <label
+                  for="lastname"
+                >
+                  Last Name
+                </label>
+                <input
+                  autocomplete="lastname"
+                  id="lastname"
+                  placeholder="Doe"
+                  type="text"
+                />
+              </section>
+              <section>
+                <label
+                  for="email"
+                >
+                  Email 
+                  <sup>
+                    *
+                  </sup>
+                </label>
+                <input
+                  autocomplete="email"
+                  id="email"
+                  placeholder="jamesdoe72@email.com"
+                  required=""
+                  type="email"
+                />
+              </section>
+              <section>
+                <label
+                  for="subject"
+                >
+                  Subject
+                </label>
+                <input
+                  autocomplete="subject"
+                  id="subject"
+                  type="text"
+                />
+              </section>
+              <section>
+                <label
+                  for="message"
+                >
+                  Message 
+                  <sup>
+                    *
+                  </sup>
+                </label>
+                <textarea
+                  id="message"
+                  required=""
+                  rows="10"
+                  type="text"
+                />
+              </section>
+              <button
+                aria-label="send message"
+                id="send-button"
+                type="submit"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     `);
