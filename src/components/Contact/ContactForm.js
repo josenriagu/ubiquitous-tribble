@@ -68,11 +68,12 @@ export default function ContactForm() {
     <FormWrapper onSubmit={onSubmit}>
       <div id="contact-form">
         <section>
-          <label>
+          <label htmlFor="firstname">
             First Name <sup>*</sup>
           </label>
           <input
             autoComplete="firstname"
+            id="firstname"
             required
             type="text"
             placeholder="James"
@@ -80,20 +81,22 @@ export default function ContactForm() {
           />
         </section>
         <section>
-          <label>Last Name</label>
+          <label htmlFor="lastname">Last Name</label>
           <input
             autoComplete="lastname"
+            id="lastname"
             type="text"
             placeholder="Doe"
             ref={lastnameRef}
           />
         </section>
         <section>
-          <label>
+          <label htmlFor="email">
             Email <sup>*</sup>
           </label>
           <input
             autoComplete="email"
+            id="email"
             required
             type="email"
             placeholder="jamesdoe72@email.com"
@@ -101,16 +104,27 @@ export default function ContactForm() {
           />
         </section>
         <section>
-          <label>Subject</label>
-          <input autoComplete="username" type="text" ref={subjectRef} />
+          <label htmlFor="subject">Subject</label>
+          <input
+            autoComplete="subject"
+            id="subject"
+            type="text"
+            ref={subjectRef}
+          />
         </section>
         <section>
-          <label>
+          <label htmlFor="message">
             Message <sup>*</sup>
           </label>
-          <textarea required rows="10" type="text" ref={messageRef} />
+          <textarea
+            id="message"
+            required
+            rows="10"
+            type="text"
+            ref={messageRef}
+          />
         </section>
-        <button id="send-button" type="submit">
+        <button id="send-button" aria-label="send message" type="submit">
           Send Message
         </button>
       </div>

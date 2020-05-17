@@ -25,7 +25,7 @@ const About = () => {
             😎
           </span>
         </p>
-        <button id="button" onClick={() => say.hello()}>
+        <button id="button" aria-label="say hello" onClick={() => say.hello()}>
           say.hello()
         </button>
       </div>
