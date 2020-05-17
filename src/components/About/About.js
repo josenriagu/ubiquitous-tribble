@@ -1,13 +1,21 @@
 import React from 'react';
 
 import say from './hello';
+import revertSrc from '../../utils/revert';
 import { AboutDiv } from './About.styled';
+
+const baseUrl =
+  'https://res.cloudinary.com/thedrflynn/image/upload/v1589706435/portfolio';
 
 const About = () => {
   return (
     <AboutDiv id="about" data-testid="about">
       <div>
-        <img src="/code.png" alt="gallery visit" />
+        <img
+          onError={e => revertSrc(e, `${baseUrl}/code_p.png`)}
+          src={`${baseUrl}/code.webp`}
+          alt="gallery visit"
+        />
       </div>
       <div id="greet">
         <h2>About me</h2>

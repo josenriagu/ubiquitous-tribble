@@ -1,7 +1,10 @@
 import React from 'react';
 
-import logo from '../../logo.png';
+import revertSrc from '../../utils/revert';
 import { HeaderDiv, MobileNav } from './NavBar.styled';
+
+const baseUrl =
+  'https://res.cloudinary.com/thedrflynn/image/upload/v1589709240/portfolio';
 
 function NavBar() {
   return (
@@ -9,7 +12,11 @@ function NavBar() {
       <HeaderDiv>
         <div>
           <a href="/">
-            <img src={logo} alt="Josemaria Nriagu" />
+            <img
+              onError={e => revertSrc(e, `${baseUrl}/logo_p.png`)}
+              src={`${baseUrl}/logo.webp`}
+              alt="Josemaria Nriagu"
+            />
           </a>
         </div>
         <nav data-testid="desktopNav">
