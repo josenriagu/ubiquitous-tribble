@@ -18,7 +18,10 @@ export const ProjectDiv = styled.div`
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    overflow-x: auto;
+    overflow: auto;
+    /* add specific browser support for overflow */
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
     -webkit-overflow-scrolling: touch;
     &::-webkit-scrollbar {
       display: none;

@@ -13,24 +13,24 @@ export const AboutDiv = styled.div`
     flex-direction: column-reverse;
   }
   div:nth-child(1) {
-    border-radius: 20%;
-    width: 48%;
+    display: flex;
+    width: 50%;
     height: 80vh;
-    position: relative;
+    align-items: center;
     @media ${screens.mobile} {
       width: 100%;
       height: 50vh;
     }
     img {
       border-radius: 3%;
-      width: 100%;
-      height: 100%;
+      max-width: 100%;
     }
   }
   div:nth-child(2) {
     width: 40%;
     @media ${screens.mobile} {
       width: 100%;
+      margin-bottom: 3rem;
     }
   }
 `;
