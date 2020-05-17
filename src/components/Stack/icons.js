@@ -1,68 +1,71 @@
+const baseUrl =
+  'https://res.cloudinary.com/thedrflynn/image/upload/v1589710385/portfolio/assets/icons';
+
 export const icon = [
   {
-    class: "devicon-html5-plain"
+    class: 'devicon-html5-plain'
   },
   {
-    class: "devicon-css3-plain colored"
+    class: 'devicon-css3-plain colored'
   },
   {
-    class: "devicon-less-plain-wordmark"
+    class: 'devicon-less-plain-wordmark'
   },
   {
-    class: "devicon-javascript-plain colored"
+    class: 'devicon-javascript-plain colored'
   },
   {
-    class: "devicon-react-plain colored"
+    class: 'devicon-react-plain colored'
   },
   {
-    src: "/assets/icons/styled-components.png",
-    alt: "styled-components"
+    src: `${baseUrl}/styled-components.png`,
+    alt: 'styled-components'
   },
   {
-    src: "/assets/icons/redux.png",
-    alt: "redux"
+    src: `${baseUrl}/redux.png`,
+    alt: 'redux'
   },
   {
-    class: "devicon-nodejs-plain colored"
+    class: 'devicon-nodejs-plain colored'
   },
   {
-    class: "devicon-express-original"
+    class: 'devicon-express-original'
   },
   {
-    src: "/assets/icons/graphql.png",
-    alt: "graphql"
+    src: `${baseUrl}/graphql.png`,
+    alt: 'graphql'
   },
   {
-    src: "/assets/icons/sqlite.png",
-    alt: "sqlite"
+    src: `${baseUrl}/sqlite.png`,
+    alt: 'sqlite'
   },
   {
-    class: "devicon-postgresql-plain colored"
+    class: 'devicon-postgresql-plain colored'
   },
   {
-    class: "devicon-mongodb-plain colored"
+    class: 'devicon-mongodb-plain colored'
   },
   {
-    src: "/assets/icons/python.png",
-    alt: "python"
+    src: `${baseUrl}/python.png`,
+    alt: 'python'
   },
   {
-    class: "devicon-wordpress-plain"
+    class: 'devicon-wordpress-plain'
   },
   {
-    class: "devicon-git-plain colored"
+    class: 'devicon-git-plain colored'
   },
   {
-    class: "devicon-github-plain"
+    class: 'devicon-github-plain'
   },
   {
-    class: "devicon-gitlab-plain colored"
+    class: 'devicon-gitlab-plain colored'
   },
   {
-    src: "/assets/icons/netlify.png",
-    alt: "netlify"
+    src: `${baseUrl}/netlify.png`,
+    alt: 'netlify'
   },
   {
-    class: "devicon-heroku-line colored"
+    class: 'devicon-heroku-line colored'
   }
 ];
