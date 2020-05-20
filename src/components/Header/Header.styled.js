@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import { bounce, beat } from "../../styles/Animations";
-import { screens } from "../../styles/variables";
+import { bounce, beat } from '../../styles/Animations';
+import { screens } from '../../styles/variables';
 
 export const AppHeader = styled.header`
   width: 100%;
@@ -12,6 +12,8 @@ export const AppHeader = styled.header`
   margin-top: 0.5rem;
   padding: 1rem;
   div:last-child {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin-bottom: 20rem;
     .typer {
@@ -19,7 +21,7 @@ export const AppHeader = styled.header`
     }
     span {
       font-size: calc(1.5 * 2.4rem);
-      // margin: 3.6rem 0 0;
+      margin: 3.6rem 0 0;
       font-weight: 400;
       @media ${screens.mobile} {
         font-size: calc(0.7 * 2.4rem);
