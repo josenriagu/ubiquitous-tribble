@@ -6,14 +6,11 @@ export const ProjectDiv = styled.div`
   margin-top: 10rem;
   padding-top: 3rem;
   div .active {
-    background: rgba(255, 255, 255, 0.3);
     cursor: grabbing;
     cursor: -webkit-grabbing;
-    transform: scale(1);
   }
   div {
     width: 100%;
-    height: 60vh;
     cursor: grab;
     display: flex;
     flex-wrap: nowrap;
@@ -27,17 +24,26 @@ export const ProjectDiv = styled.div`
       display: none;
     }
     div {
-      background: ${props => props.theme.project};
+      border: 0.05rem solid gray;
       border-radius: 0.8rem;
       width: 30%;
       height: 58vh;
-      margin: 0 0.5rem;
+      margin: 3rem 0.5rem;
       padding-bottom: 2rem;
       align-items: flex-start;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       flex: 0 0 auto;
+      /* make hover transforms a bit slower */
+      transition: transform 1s;
+      :hover {
+        -webkit-transform: scale(1.015);
+        -ms-transform: scale(1.015);
+        transform: scale(1.015);
+        border: 0.05rem solid ${colors.gold};
+        box-shadow: ${props => props.theme.boxShadow};
+      }
       @media ${screens.mobile} {
         display: flex;
         width: 87%;
@@ -45,8 +51,6 @@ export const ProjectDiv = styled.div`
       img {
         width: 100%;
         border-radius: 0.8rem 0.8rem 0 0;
-        border: ${props =>
-          props.checker === 'light' ? `.1rem solid ${colors.gold}` : 'none'};
         border-bottom: none;
       }
       i {
