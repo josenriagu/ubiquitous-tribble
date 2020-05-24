@@ -31,17 +31,14 @@ describe('Test suite for Contact', () => {
             Contact
           </h2>
           <p>
-            Want to grow your team? Hire me, I will bring aboard my passion and communication skills
+            Need a hand on an interesting project? Let's talk. I gatchu!
+             
             <span
               aria-label="smiling face with smiling eyes"
               role="img"
             >
               😊
             </span>
-          </p>
-          <p>
-            Need a hand on an interesting project? Let's talk. I gatchu!
-             
             <span
               aria-label="handshake"
               role="img"
