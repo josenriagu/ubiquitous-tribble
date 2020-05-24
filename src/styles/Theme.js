@@ -1,12 +1,11 @@
-
 export const lightTheme = {
   body: '#ffffff',
   text: '#000000',
-  project: '#aaaaaa'
-}
+  boxShadow: '-0.1rem 1rem 1rem 0 rgba(0, 0, 0, 0.1)'
+};
 
 export const darkTheme = {
   body: '#000000',
   text: '#ffffff',
-  project: '#25292c'
-}
+  boxShadow: '-0.1rem 1rem 1rem 0 rgba(255, 255, 255, 0.1)'
+};

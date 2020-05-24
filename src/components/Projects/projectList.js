@@ -29,19 +29,6 @@ export const projectList = [
     mobileReady: true
   },
   {
-    src: `${baseUrl}/webp/anywherefitness.webp`,
-    dsrc: `${baseUrl}/original/anywherefitness_p.png`,
-    href: 'https://anywherelanding.now.sh/',
-    title: 'Anywhere Fitness',
-    description: 'Schedule and discover fitness classes near you',
-    stack: 'Built with: React ∙ Node ∙ Express ∙ PostgreSQL',
-    role: 'Teamlead',
-    duration: '05 days',
-    team: 7,
-    codebase: 'https://github.com/BW-Anywhere-Fitness-Nov-18-22',
-    mobileReady: false
-  },
-  {
     src: `${baseUrl}/webp/soupkitchen.webp`,
     dsrc: `${baseUrl}/original/soupkitchen_p.png`,
     href: 'https://skim.netlify.com',
@@ -79,20 +66,6 @@ export const projectList = [
     duration: '04 days',
     team: 1,
     codebase: 'https://github.com/josenriagu/React-Insta-Clone',
-    mobileReady: false
-  },
-  {
-    src: `${baseUrl}/webp/chefportfolio.webp`,
-    dsrc: `${baseUrl}/original/chefportfolio_p.png`,
-    href: 'https://bwchefportfolio.now.sh',
-    title: 'Chef Portfolio',
-    description:
-      'Draw inspirations from portfolios of best chefs in your locality',
-    stack: 'Built with: React ∙ Redux ∙ Node ∙ Express ∙ PostgreSQL',
-    role: 'Teamlead',
-    duration: '05 days',
-    team: 7,
-    codebase: 'https://github.com/BW-Refugee-Stories-Oct-21-25',
     mobileReady: false
   },
   {
@@ -135,19 +108,6 @@ export const projectList = [
     mobileReady: true
   },
   {
-    src: `${baseUrl}/webp/nkutheatre.webp`,
-    dsrc: `${baseUrl}/original/nkutheatre_j.jpg`,
-    href: 'https://nkutheatre.com',
-    title: 'Nku Theatre',
-    description: 'Magazine blog',
-    stack: 'Built with: Self-hosted Wordpress',
-    role: 'Designer',
-    duration: '1.5 days',
-    team: 1,
-    codebase: '',
-    mobileReady: true
-  },
-  {
     src: `${baseUrl}/webp/uberboytrend.webp`,
     dsrc: `${baseUrl}/original/uberboytrend_p.png`,
     href: 'https://uberboytrend.com',
@@ -182,19 +142,6 @@ export const projectList = [
     stack: 'Built with: Self-hosted Wordpress',
     role: 'Designer',
     duration: '04 days',
-    team: 1,
-    codebase: '',
-    mobileReady: true
-  },
-  {
-    src: `${baseUrl}/webp/hubrisconsult.webp`,
-    dsrc: `${baseUrl}/original/hubrisconsult_p.png`,
-    href: 'https://hubrisconsult.com',
-    title: 'Hubris Consult',
-    description: 'Web design and digital marketing agency',
-    stack: 'Built with: Self-hosted Wordpress',
-    role: 'Designer',
-    duration: '2.5 days',
     team: 1,
     codebase: '',
     mobileReady: true

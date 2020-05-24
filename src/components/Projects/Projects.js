@@ -6,7 +6,7 @@ import { ProjectDiv } from './Projects.styled';
 
 const Projects = ({ theme }) => {
   useEffect(() => {
-    const wrapper = document.querySelector('.projects-wrapper');
+    const wrapper = document.querySelector('#projects-wrapper');
     let isDown = false;
     let startX;
     let scrollLeft;
@@ -36,7 +36,7 @@ const Projects = ({ theme }) => {
   }, []);
 
   return (
-    <ProjectDiv id="projects" checker={theme}>
+    <ProjectDiv id="projects">
       <h2>Projects</h2>
       <p>
         I spend a couple hours (maybe more{' '}
@@ -47,7 +47,7 @@ const Projects = ({ theme }) => {
         to days, then weeks, months even before reality takes over these
         projects
       </p>
-      <div data-testid="projects-wrapper" className="projects-wrapper">
+      <div data-testid="projects-wrapper" id="projects-wrapper">
         {projectList.map((project, idx) => {
           return (
             <div key={idx}>
