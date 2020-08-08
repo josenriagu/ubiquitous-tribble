@@ -34,7 +34,7 @@ const Footer = ({ theme, toggleTheme }) => {
       {/* <p id="switch" onClick={toggleTheme}>Switch to {theme === 'dark' ? 'light' : 'dark'} mode</p> */}
       <span>
         {' '}
-        {theme === 'dark' ? 'Toggle Light' : 'Toggle Dark'}{' '}
+        {theme === 'dark' ? 'Light Theme' : 'Dark Theme'}{' '}
         <Switch
           className="switch"
           checkedChildren={<i className="fas fa-moon"></i>}
