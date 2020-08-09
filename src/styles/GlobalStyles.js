@@ -1,6 +1,6 @@
 // Create global styles using styled components to be injected into components.
-import { createGlobalStyle } from "styled-components";
-import { screens, colors } from "./variables";
+import { createGlobalStyle } from 'styled-components';
+import { screens, colors } from './variables';
 
 const GlobalStyle = createGlobalStyle`
 :root {

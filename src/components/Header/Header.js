@@ -42,10 +42,10 @@ function Header({ theme }) {
     strings: [
       '<strong>Team-Oriented</strong>',
       'Software Engineer',
-      '<strong>Team-Oriented</strong> Software Engineer'
+      '<strong>Team-Oriented</strong> Software Engineer',
     ],
     typeSpeed: 50,
-    backSpeed: 50
+    backSpeed: 50,
   });
 
   return (

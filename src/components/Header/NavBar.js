@@ -13,7 +13,7 @@ function NavBar() {
         <div>
           <a href="/">
             <img
-              onError={e => revertSrc(e, `${baseUrl}/logo_p.png`)}
+              onError={(e) => revertSrc(e, `${baseUrl}/logo_p.png`)}
               src={`${baseUrl}/logo.webp`}
               alt="Josemaria Nriagu"
             />

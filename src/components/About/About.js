@@ -12,7 +12,7 @@ const About = () => {
     <AboutDiv id="about" data-testid="about">
       <div>
         <img
-          onError={e => revertSrc(e, `${baseUrl}/code_p.png`)}
+          onError={(e) => revertSrc(e, `${baseUrl}/code_p.png`)}
           src={`${baseUrl}/code.webp`}
           alt="gallery visit"
         />

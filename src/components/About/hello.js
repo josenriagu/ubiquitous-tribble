@@ -16,7 +16,7 @@ class Human extends About {
       duration: 5000,
       attribute: 'message',
       el: 'greet',
-      button: 'button'
+      button: 'button',
     });
   }
 }
@@ -24,7 +24,7 @@ class Human extends About {
 const say = new Human({
   name: 'Jose',
   intro: 'Hallo',
-  likes: ['building functional teams ❤️', 'making things work 😇']
+  likes: ['building functional teams ❤️', 'making things work 😇'],
 });
 
 export function tempAlert(params) {
@@ -35,7 +35,7 @@ export function tempAlert(params) {
   let el = document.getElementById(params.el);
   let button = document.getElementById(params.button);
 
-  setTimeout(function() {
+  setTimeout(function () {
     p.parentNode.removeChild(p);
     el.appendChild(button);
   }, params.duration);

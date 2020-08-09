@@ -13,7 +13,7 @@ export const projectList = [
     duration: '07 days',
     team: 3,
     codebase: 'https://github.com/NaijaWorks',
-    mobileReady: true
+    mobileReady: true,
   },
   {
     src: `${baseUrl}/webp/pluto.webp`,
@@ -26,7 +26,7 @@ export const projectList = [
     duration: '12 days',
     team: 3,
     codebase: 'https://github.com/webeu3-pluto',
-    mobileReady: true
+    mobileReady: true,
   },
   {
     src: `${baseUrl}/webp/soupkitchen.webp`,
@@ -39,7 +39,7 @@ export const projectList = [
     duration: '05 days',
     team: 1,
     codebase: 'https://gitlab.com/josenriagu/soup-kitchen-inventory',
-    mobileReady: true
+    mobileReady: true,
   },
   {
     src: `${baseUrl}/webp/refugeestories.webp`,
@@ -53,7 +53,7 @@ export const projectList = [
     duration: '05 days',
     team: 5,
     codebase: 'https://github.com/BW-Refugee-Stories-Oct-21-25',
-    mobileReady: true
+    mobileReady: true,
   },
   {
     src: `${baseUrl}/webp/lambdagram.webp`,
@@ -66,7 +66,7 @@ export const projectList = [
     duration: '04 days',
     team: 1,
     codebase: 'https://github.com/josenriagu/React-Insta-Clone',
-    mobileReady: false
+    mobileReady: false,
   },
   {
     src: `${baseUrl}/webp/chargescreen.webp`,
@@ -79,7 +79,7 @@ export const projectList = [
     duration: '0.1 days',
     team: 1,
     codebase: 'https://github.com/josenriagu/chargescreen',
-    mobileReady: true
+    mobileReady: true,
   },
   {
     src: `${baseUrl}/webp/paltreev.webp`,
@@ -92,7 +92,7 @@ export const projectList = [
     duration: '9+ days',
     team: 2,
     codebase: '',
-    mobileReady: true
+    mobileReady: true,
   },
   {
     src: `${baseUrl}/webp/royalgatsby.webp`,
@@ -105,7 +105,7 @@ export const projectList = [
     duration: '03 days',
     team: 1,
     codebase: '',
-    mobileReady: true
+    mobileReady: true,
   },
   {
     src: `${baseUrl}/webp/uberboytrend.webp`,
@@ -118,7 +118,7 @@ export const projectList = [
     duration: '03 days',
     team: 1,
     codebase: '',
-    mobileReady: true
+    mobileReady: true,
   },
   {
     src: `${baseUrl}/webp/flexushotels.webp`,
@@ -131,7 +131,7 @@ export const projectList = [
     duration: '03 days',
     team: 1,
     codebase: '',
-    mobileReady: true
+    mobileReady: true,
   },
   {
     src: `${baseUrl}/webp/mainmarket.webp`,
@@ -144,6 +144,6 @@ export const projectList = [
     duration: '04 days',
     team: 1,
     codebase: '',
-    mobileReady: true
-  }
+    mobileReady: true,
+  },
 ];
