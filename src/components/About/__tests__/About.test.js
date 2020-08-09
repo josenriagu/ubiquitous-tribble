@@ -1,5 +1,10 @@
 import React from 'react';
-import { render, fireEvent, waitForElement, cleanup } from '@testing-library/react';
+import {
+  render,
+  fireEvent,
+  waitForElement,
+  cleanup,
+} from '@testing-library/react';
 import About from '../About';
 
 afterEach(cleanup);

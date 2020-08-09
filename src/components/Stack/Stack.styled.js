@@ -4,7 +4,7 @@ import { screens } from '../../styles/variables';
 import { xdBounce, xmBounce, yBounce } from '../../styles/Animations';
 
 export const style = {
-  fontSize: '5rem'
+  fontSize: '5rem',
 };
 
 export const StackDiv = styled.div`

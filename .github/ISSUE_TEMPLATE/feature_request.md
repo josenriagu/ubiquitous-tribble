@@ -4,7 +4,6 @@ about: Suggest an idea for this project
 title: Hello buddy, can we try this feature?
 labels: enhancement
 assignees: josenriagu
-
 ---
 
 **Is your feature request related to a problem? Please describe.**

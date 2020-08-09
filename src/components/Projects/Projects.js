@@ -11,7 +11,7 @@ const Projects = ({ theme }) => {
     let startX;
     let scrollLeft;
 
-    wrapper.addEventListener('mousedown', e => {
+    wrapper.addEventListener('mousedown', (e) => {
       isDown = true;
       wrapper.classList.add('active');
       startX = e.pageX - wrapper.offsetLeft;
@@ -25,7 +25,7 @@ const Projects = ({ theme }) => {
       isDown = false;
       wrapper.classList.remove('active');
     });
-    wrapper.addEventListener('mousemove', e => {
+    wrapper.addEventListener('mousemove', (e) => {
       if (!isDown) return;
       e.preventDefault();
       const x = e.pageX - wrapper.offsetLeft;
@@ -53,7 +53,7 @@ const Projects = ({ theme }) => {
             <div key={idx}>
               <img
                 // fallback to load alternative image format in unsupported browsers
-                onError={e => revertSrc(e, project.dsrc)}
+                onError={(e) => revertSrc(e, project.dsrc)}
                 src={project.src}
                 alt={project.title}
               />

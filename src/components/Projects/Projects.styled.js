@@ -42,7 +42,7 @@ export const ProjectDiv = styled.div`
         -ms-transform: scale(1.015);
         transform: scale(1.015);
         border: 0.05rem solid ${colors.gold};
-        box-shadow: ${props => props.theme.boxShadow};
+        box-shadow: ${(props) => props.theme.boxShadow};
       }
       @media ${screens.mobile} {
         display: flex;

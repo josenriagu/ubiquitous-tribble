@@ -6,6 +6,6 @@ export const AppDiv = styled.div`
   margin: 0 auto;
   @media ${screens.mobile} {
     width: ${sizes.mobileRes};
-    margin: .5rem auto;
+    margin: 0.5rem auto;
   }
 `;

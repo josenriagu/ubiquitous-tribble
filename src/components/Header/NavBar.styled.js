@@ -39,10 +39,10 @@ export const MobileNav = styled.nav`
   display: none;
   @media ${screens.mobile} {
     width: 100%;
-    border-top: 0.05rem solid ${props => props.theme.text};
+    border-top: 0.05rem solid ${(props) => props.theme.text};
     padding: 1rem 2.5rem;
     position: fixed;
-    background-color: ${props => props.theme.body};
+    background-color: ${(props) => props.theme.body};
     display: flex;
     justify-content: space-between;
     bottom: 0;

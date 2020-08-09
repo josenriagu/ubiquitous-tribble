@@ -19,13 +19,13 @@ export default function ContactForm() {
     messageRef.current.value = null;
   };
 
-  const onSubmit = event => {
+  const onSubmit = (event) => {
     event.preventDefault();
     const user = {
       name: `${firstnameRef.current.value} ${lastnameRef.current.value}`,
       email: emailRef.current.value,
       subject: subjectRef.current.value || 'Message from Contact Form',
-      message: messageRef.current.value
+      message: messageRef.current.value,
     };
     emailjs
       .send(
@@ -35,12 +35,12 @@ export default function ContactForm() {
           from_name: user.name,
           reply_to: user.email,
           message_html: `<p><strong>Subject:</strong> <br/>${user.subject} <br/><br/> <strong>Message:</strong> <br/>${user.message}</p>`,
-          to_name: 'Dr. Flynn'
+          to_name: 'Dr. Flynn',
         },
         process.env.REACT_APP_USER_ID
       )
       .then(
-        result => {
+        (result) => {
           resetForm();
           tempAlert({
             message: 'Voila! Your message has been sent 🥰',
@@ -48,10 +48,10 @@ export default function ContactForm() {
             attribute: 'response',
             el: 'contact-form',
             button: 'send-button',
-            result
+            result,
           });
         },
-        error => {
+        (error) => {
           resetForm();
           tempAlert({
             message: 'An error occured. Please try again later 😟',
@@ -59,7 +59,7 @@ export default function ContactForm() {
             attribute: 'response',
             el: 'contact-form',
             button: 'send-button',
-            error
+            error,
           });
         }
       );

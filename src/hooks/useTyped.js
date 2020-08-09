@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from "react";
-import Typed from "typed.js";
+import { useState, useEffect, useRef } from 'react';
+import Typed from 'typed.js';
 
 const useRerender = () => {
   const [flag, setFlag] = useState(true);

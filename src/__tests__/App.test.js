@@ -1,5 +1,10 @@
 import React from 'react';
-import { render, waitForElement, waitForDomChange, cleanup } from '@testing-library/react';
+import {
+  render,
+  waitForElement,
+  waitForDomChange,
+  cleanup,
+} from '@testing-library/react';
 import App from '../App';
 
 afterEach(cleanup);
@@ -15,6 +20,6 @@ describe('Test suite for App', () => {
     render(<App />);
     const dom = await waitForDomChange();
     const name = Array.from('Josemaria Nriagu');
-    expect(name.some(el => dom[0].addedNodes.includes(el)));
+    expect(name.some((el) => dom[0].addedNodes.includes(el)));
   });
 });
