@@ -1,18 +1,18 @@
-class About {
+class Bio {
   constructor(props) {
     this.name = props.name;
     this.intro = props.intro;
   }
 }
 
-class Human extends About {
+class Human extends Bio {
   constructor(props) {
     super(props);
     this.likes = props.likes;
   }
   hello() {
     tempAlert({
-      message: `${this.intro}! My name is ${this.name}. Me love ${this.likes[0]} and ${this.likes[1]}`,
+      message: `${this.intro}! My name is ${this.name}. I love ${this.likes[0]} and ${this.likes[1]}`,
       duration: 5000,
       attribute: 'message',
       el: 'greet',
