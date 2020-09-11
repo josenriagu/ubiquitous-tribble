@@ -38,9 +38,9 @@ export const ProjectDiv = styled.div`
       /* make hover transforms a bit slower */
       transition: transform 1s;
       :hover {
-        -webkit-transform: scale(1.015);
-        -ms-transform: scale(1.015);
-        transform: scale(1.015);
+        -webkit-transform: scale(1.0025);
+        -ms-transform: scale(1.0025);
+        transform: scale(1.0025);
         border: 0.05rem solid ${colors.gold};
         box-shadow: ${(props) => props.theme.boxShadow};
       }
