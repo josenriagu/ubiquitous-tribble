@@ -71,7 +71,7 @@ export const projectList = [
   {
     src: `${baseUrl}/webp/chargescreen.webp`,
     dsrc: `${baseUrl}/original/chargescreen_p.png`,
-    href: 'https://chargescreen.netlify.coom',
+    href: 'https://chargescreen.netlify.com',
     title: 'OneUI Charge screen',
     description: 'Inspired by the interactive charge screen of Samsung OneUI',
     stack: 'Built with: React',
