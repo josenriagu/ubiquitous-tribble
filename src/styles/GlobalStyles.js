@@ -1,6 +1,15 @@
 // Create global styles using styled components to be injected into components.
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, keyframes } from 'styled-components';
 import { screens, colors } from './variables';
+
+const snowflake = keyframes`{
+  from {
+    transform: translateY(-10vh);
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}`;
 
 const GlobalStyle = createGlobalStyle`
 :root {
@@ -112,6 +121,13 @@ input, textarea, select {
       transform: scale(1.05);
       box-shadow: -0.1rem 1rem 1rem 0 rgba(0, 0, 0, 0.08);
    }
+}
+.flake {
+   color: rgb(247, 252, 243);
+   font-size: 2.5rem;
+   padding: 1rem;
+   animation: ${snowflake} 2s linear forwards infinite;
+   animation-delay: 1s;
 }
 `;
 
