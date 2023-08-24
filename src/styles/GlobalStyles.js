@@ -2,7 +2,7 @@
 import { createGlobalStyle, keyframes } from 'styled-components';
 import { screens, colors } from './variables';
 
-const snowflake = keyframes`{
+const weatherIcon = keyframes`{
   from {
     transform: translateY(-10vh);
   }
@@ -122,11 +122,11 @@ input, textarea, select {
       box-shadow: -0.1rem 1rem 1rem 0 rgba(0, 0, 0, 0.08);
    }
 }
-.flake {
+.wIcon {
    color: rgb(247, 252, 243);
    font-size: 2.5rem;
    padding: 1rem;
-   animation: ${snowflake} 2s linear forwards infinite;
+   animation: ${weatherIcon} 2s linear forwards infinite;
    animation-delay: 1s;
 }
 `;
