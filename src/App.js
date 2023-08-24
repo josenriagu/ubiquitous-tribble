@@ -1,4 +1,4 @@
-import React, { useState, Suspense } from 'react';
+import React, { lazy, useEffect, useState, Suspense } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import { lightTheme, darkTheme } from './styles/Theme';
@@ -9,13 +9,19 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { AppDiv } from './App.styled';
 
-const About = React.lazy(() => import('./components/About'));
-const Stack = React.lazy(() => import('./components/Stack'));
-const Projects = React.lazy(() => import('./components/Projects'));
+const About = lazy(() => import('./components/About'));
+const Stack = lazy(() => import('./components/Stack'));
+const Projects = lazy(() => import('./components/Projects'));
 
-const flakeDensity = process.env.REACT_APP_FLAKE_DENSITY || 100
+/**
+ * weather icon configuration
+ */
+const weatherIcon = process.env.REACT_APP_WEATHER_ICON || 'wi-day-sunny';
 
-const flakeCreationTime = process.env.REACT_APP_FLAKE_CREATION_TIME || 3000
+const weatherIconDensity = process.env.REACT_APP_WEATHER_ICON_DENSITY || 100;
+
+const weatherIconCreationTime =
+  process.env.REACT_APP_WEATHER_ICON_CREATION_TIME || 3000;
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -23,14 +29,13 @@ function App() {
   const toggleTheme = () =>
     theme === 'light' ? setTheme('dark') : setTheme('light');
 
-  React.useEffect(() => {
-    const flake = document.querySelector(".flake");
-    const container = document.querySelector(".container");
+  useEffect(() => {
+    const wIcon = document.querySelector('.wIcon');
+    const container = document.querySelector('.container');
 
-
-    function createFlake() {
-      // clone initial flake
-      const clone = flake.cloneNode(true);
+    function createWeatherIcon() {
+      // clone initial weather icon
+      const clone = wIcon.cloneNode(true);
       /* add styles */
       // left padding
       clone.style.paddingLeft = `${Math.random() * 10}px`;
@@ -43,22 +48,22 @@ function App() {
       container.append(clone);
     }
 
-    const s = setInterval(createFlake, flakeDensity);
+    const s = setInterval(createWeatherIcon, weatherIconDensity);
 
     setTimeout(() => {
       clearInterval(s);
-    }, flakeCreationTime);
-  }, [])
+    }, weatherIconCreationTime);
+  }, []);
 
-
+  const iconClassName = `wi ${weatherIcon} wIcon`;
 
   return (
     <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
       <>
         <GlobalStyle h1 />
         {/* setting position to absolute to avoid pushing down other contents */}
-        <div className='container' style={{ position: 'absolute' }}>
-          <i className="wi wi-snowflake-cold flake"></i>
+        <div className="container" style={{ position: 'absolute' }}>
+          <i className={iconClassName}></i>
         </div>
         <AppDiv>
           <Header theme={theme} />
