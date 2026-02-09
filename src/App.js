@@ -37,6 +37,8 @@ function App() {
       // clone initial weather icon
       const clone = wIcon.cloneNode(true);
       /* add styles */
+      // allow clicks to pass through
+      clone.style.pointerEvents = 'none';
       // left padding
       clone.style.paddingLeft = `${Math.random() * 10}px`;
       // animation duration between 3-5
@@ -62,7 +64,7 @@ function App() {
       <>
         <GlobalStyle h1 />
         {/* setting position to absolute to avoid pushing down other contents */}
-        <div className="container" style={{ position: 'absolute' }}>
+        <div className="container" style={{ position: 'absolute', pointerEvents: 'none' }}>
           <i className={iconClassName}></i>
         </div>
         <AppDiv>
