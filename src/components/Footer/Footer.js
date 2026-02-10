@@ -1,7 +1,4 @@
 import React from 'react';
-import { Switch } from 'antd';
-import 'antd/lib/switch/style/index.css'; // imports the styles for the specific component. This is different from a general non-specific import 'antd/dist/antd.css' which may affect global styles.
-
 import { AppFooter } from './Footer.styled';
 
 const Footer = ({ theme, toggleTheme }) => {
@@ -30,19 +27,9 @@ const Footer = ({ theme, toggleTheme }) => {
           💅 🍷 and 🍕
         </span>
       </p>
-      {/* previous implementation. Legacy code */}
-      {/* <p id="switch" onClick={toggleTheme}>Switch to {theme === 'dark' ? 'light' : 'dark'} mode</p> */}
-      <span>
-        {' '}
-        {theme === 'dark' ? 'Light Theme' : 'Dark Theme'}{' '}
-        <Switch
-          className="switch"
-          checkedChildren={<i className="fas fa-moon"></i>}
-          unCheckedChildren={<i className="fas fa-sun"></i>}
-          defaultChecked
-          onClick={toggleTheme}
-        />
-      </span>
+      <button id="switch" onClick={toggleTheme}>
+        Toggle {theme === 'dark' ? 'light' : 'dark'} mode
+      </button>
       <div>
         <h5>
           Icons used courtesy of their respective authors from{' '}

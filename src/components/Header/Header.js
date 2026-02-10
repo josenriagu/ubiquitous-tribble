@@ -40,9 +40,9 @@ function Header({ theme }) {
 
   useTyped(captionRef, {
     strings: [
-      '<strong>Team-Oriented</strong>',
+      '<strong>Product-Focused</strong>',
       'Software Engineer',
-      '<strong>Team-Oriented</strong> Software Engineer',
+      '<strong>Product-Focused</strong> Software Engineer',
     ],
     typeSpeed: 50,
     backSpeed: 50,
