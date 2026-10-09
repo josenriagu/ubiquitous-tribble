@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!--
+      Apply a saved theme choice before the first paint, so a visitor who
+      picked one never sees a flash of the other. No saved choice means the
+      page follows the system setting. This sits above the stylesheets on
+      purpose: an inline script placed after one waits for it to download.
+    -->
+    <script>
+      try {
+        var theme = localStorage.getItem('theme');
+        if (theme === 'light' || theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', theme);
+        }
+      } catch (e) {}
+    </script>
+    <!--
+      icons
+    -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <!--
+      base meta
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="theme-color"
+      content="#e9e5ee"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0f0a15"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="Josemaria Nriagu builds the part of the product people actually touch. Full stack software engineer, frontend focused, with nine years of shipping React and TypeScript products."
+    />
+    <meta
+      name="keywords"
+      content="Josemaria Nriagu, Jose Nriagu, full stack software engineer, frontend engineer, React, TypeScript, React Native, design systems, web performance, accessibility, Chune, Fraqshares, AKASHA, Readeo, Abuja, Nigeria"
+    />
+    <meta name="author" content="Josemaria Nriagu" />
+    <link rel="canonical" href="https://www.josemarianriagu.com/" />
+    <!--
+      Open Graph markup
+    -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:site_name" content="Josemaria Nriagu" />
+    <meta property="og:url" content="https://www.josemarianriagu.com/" />
+    <meta
+      property="og:title"
+      content="Josemaria Nriagu · Full stack software engineer, frontend focused"
+    />
+    <meta
+      property="og:description"
+      content="I build the part of the product people actually touch. Co-founder of Chune and Fraqshares, and a core maintainer at AKASHA for five years before that."
+    />
+    <meta
+      property="og:image"
+      content="https://www.josemarianriagu.com/og.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Josemaria Nriagu. I build the part of the product people actually touch."
+    />
+    <meta property="profile:first_name" content="Josemaria" />
+    <meta property="profile:last_name" content="Nriagu" />
+    <!--
+      Twitter markup
+    -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@josenriagu" />
+    <meta
+      name="twitter:title"
+      content="Josemaria Nriagu · Full stack software engineer, frontend focused"
+    />
+    <meta
+      name="twitter:description"
+      content="I build the part of the product people actually touch. Co-founder of Chune and Fraqshares, and a core maintainer at AKASHA for five years before that."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.josemarianriagu.com/og.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Josemaria Nriagu. I build the part of the product people actually touch."
+    />
+    <!--
+      Schema.org markup
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Josemaria Nriagu",
+          "alternateName": "Jose Nriagu",
+          "url": "https://www.josemarianriagu.com/",
+          "image": "https://www.josemarianriagu.com/avatar.jpg",
+          "jobTitle": "Full stack software engineer",
+          "description": "Full stack software engineer, frontend focused. Co-founder of Chune and Fraqshares, and a former core maintainer at AKASHA.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Abuja",
+            "addressCountry": "NG"
+          },
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Nnamdi Azikiwe University, Awka"
+          },
+          "knowsAbout": [
+            "React",
+            "TypeScript",
+            "React Native",
+            "Design systems",
+            "Web performance",
+            "Web accessibility"
+          ],
+          "sameAs": [
+            "https://linkedin.com/in/josemarianriagu",
+            "https://github.com/josenriagu",
+            "https://twitter.com/josenriagu"
+          ]
+        }
+      }
+    </script>
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json" />
+    <title>Josemaria Nriagu · Full stack software engineer</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
+  </body>
+</html>
