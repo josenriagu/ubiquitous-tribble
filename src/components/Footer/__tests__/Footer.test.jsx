@@ -11,11 +11,8 @@ describe('Test suite for Footer', () => {
     );
   });
 
-  it('links to the issue tracker', () => {
-    const { getByRole } = render(<Footer />);
-    expect(getByRole('link')).toHaveAttribute(
-      'href',
-      'https://github.com/josenriagu/ubiquitous-tribble/issues/new/choose',
-    );
+  it('has nothing to click', () => {
+    const { getByTestId } = render(<Footer />);
+    expect(getByTestId('footer').querySelectorAll('a, button')).toHaveLength(0);
   });
 });
