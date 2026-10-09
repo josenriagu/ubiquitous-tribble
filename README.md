@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.com/josenriagu/ubiquitous-tribble.svg?branch=master)](https://travis-ci.com/josenriagu/ubiquitous-tribble)
-
 # josemarianriagu.com
 
 Personal portfolio of Josemaria Nriagu. A single page built with React, styled-components and Vite.
