@@ -1,13 +1,11 @@
 export const sizes = {
-  desktop: '1000px',
-  mobile: '500px',
-  mobileRes: '345px',
+  measure: '1240px',
+  tablet: '700px',
+  desktop: '1060px',
 };
 
 export const screens = {
-  mobile: `(max-width: ${sizes.mobile})`,
-};
-
-export const colors = {
-  gold: '#c6930a',
+  tablet: `(min-width: ${sizes.tablet})`,
+  desktop: `(min-width: ${sizes.desktop})`,
+  reducedMotion: '(prefers-reduced-motion: reduce)',
 };

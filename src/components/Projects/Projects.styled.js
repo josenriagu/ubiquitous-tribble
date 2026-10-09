@@ -1,83 +1,108 @@
 import styled from 'styled-components';
+import { screens } from '../../styles/variables';
 
-import { screens, colors } from '../../styles/variables';
-
-export const ProjectDiv = styled.div`
-  margin-top: 10rem;
-  padding-top: 3rem;
-  div .active {
-    cursor: grabbing;
-    cursor: -webkit-grabbing;
-  }
-  div {
+/* The screenshot fills the tile and the words sit on a glass panel, never
+   directly on the image. Leave the tile's own background and border light and
+   add no gradient over the screenshot: both leave a muddy grey edge around a
+   white screenshot in the light theme. */
+export const ProjectTile = styled.article`
+  --ring: var(--dark-gold);
+  background: var(--surface);
+  color: var(--dark-fg);
+  border-color: var(--proj-line);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-height: 23rem;
+  /* a card and its screenshot wait until they near the screen */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 23rem;
+  padding: 1.1rem;
+  .pshot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    max-width: 100%;
     width: 100%;
-    cursor: grab;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+    filter: var(--shot-filter);
+    transition: transform 0.9s var(--ease);
+  }
+  &:hover .pshot,
+  &:focus-within .pshot {
+    transform: scale(1.06);
+  }
+  .tags {
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    overflow: auto;
-    /* add specific browser support for overflow */
-    -ms-overflow-style: none; /* IE 11 */
-    scrollbar-width: none; /* Firefox 64 */
-    -webkit-overflow-scrolling: touch;
-    &::-webkit-scrollbar {
-      display: none;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    flex: none;
+    li {
+      font: 500 0.6875rem var(--mono);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.7rem;
+      border: 1px solid var(--dark-line);
+      border-radius: 999px;
+      color: var(--dark-fg);
+      background: var(--pill);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
     }
-    div {
-      border: 0.05rem solid gray;
-      border-radius: 0.8rem;
-      width: 30%;
-      height: 58vh;
-      margin: 3rem 0.5rem;
-      padding-bottom: 2rem;
-      align-items: flex-start;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      flex: 0 0 auto;
-      /* make hover transforms a bit slower */
-      transition: transform 1s;
-      :hover {
-        -webkit-transform: scale(1.0025);
-        -ms-transform: scale(1.0025);
-        transform: scale(1.0025);
-        border: 0.05rem solid ${colors.gold};
-        box-shadow: ${(props) => props.theme.boxShadow};
+  }
+  .pbody {
+    background: var(--glass);
+    -webkit-backdrop-filter: blur(14px) saturate(1.4);
+    backdrop-filter: blur(14px) saturate(1.4);
+    border: 1px solid var(--dark-line);
+    border-radius: 1.2rem;
+    padding: 1.1rem 1.2rem;
+    min-width: 0;
+    flex: none;
+    h2 {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+  }
+  .what {
+    color: var(--dark-muted);
+    margin-top: 0.25rem;
+  }
+  .plinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1.25rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    a {
+      display: inline-block;
+      padding-block: 0.5rem;
+      text-decoration-color: var(--dark-gold);
+      &:hover {
+        color: var(--dark-gold);
       }
-      @media ${screens.mobile} {
-        display: flex;
-        width: 87%;
-      }
-      img {
-        width: 100%;
-        border-radius: 0.8rem 0.8rem 0 0;
-        border-bottom: none;
-      }
-      i {
-        font-size: 1.6rem;
-        color: ${colors.gold};
-        margin: 0.5rem 0;
-      }
-      h4,
-      p,
-      span {
-        padding: 0 1rem;
-      }
-      h4 {
-        text-decoration: underline;
-      }
-      span {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        img {
-          width: 2rem;
-        }
-        p {
-          padding: 0 0.83rem;
-          margin: 0 0.8rem 0 0;
-        }
-      }
+    }
+  }
+  @media ${screens.desktop} {
+    &.wide .pbody {
+      max-width: 27rem;
+    }
+  }
+  @media ${screens.reducedMotion} {
+    .pshot {
+      transition: none;
+    }
+    &:hover .pshot,
+    &:focus-within .pshot {
+      transform: none;
     }
   }
 `;

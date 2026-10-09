@@ -1,11 +1,16 @@
 import styled from 'styled-components';
-import { screens, sizes } from './styles/variables';
+import { screens } from './styles/variables';
 
-export const AppDiv = styled.div`
-  width: ${sizes.desktop};
-  margin: 0 auto;
-  @media ${screens.mobile} {
-    width: ${sizes.mobileRes};
-    margin: 0.5rem auto;
+// the location tile and the profile links, stacked beside the hero
+export const Side = styled.div`
+  display: grid;
+  gap: var(--gap);
+  min-width: 0;
+  @media ${screens.tablet} {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media ${screens.desktop} {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
   }
 `;

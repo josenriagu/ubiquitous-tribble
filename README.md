@@ -1,70 +1,46 @@
-[![Build Status](https://travis-ci.com/josenriagu/ubiquitous-tribble.svg?branch=master)](https://travis-ci.com/josenriagu/ubiquitous-tribble)
+# josemarianriagu.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio of Josemaria Nriagu. A single page built with React, styled-components and Vite.
 
-## Available Scripts
+## Requirements
 
-In the project directory, you can run:
+Node 24 or newer. The version is pinned in `.nvmrc`, so `nvm use` picks it up.
 
-### `yarn start`
+## Scripts
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `npm start`
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000). The page reloads as you edit.
 
-### `yarn test`
+### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the Vitest suite in watch mode. Use `npm test -- --run` for a single pass.
 
-### `yarn build`
+### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production into the `build` folder. `scripts/build.js` bundles it with Vite, prerenders the page into `build/index.html` so it arrives as finished HTML, and trims the font files to the characters and weights the page uses.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### `npm run preview`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Serves the production build locally, to check it before deploying.
 
-### `yarn eject`
+### `npm run lint`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Checks the source with ESLint.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `npm run prettify`
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Formats the source with Prettier.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Configuration
 
-## Learn More
+`VITE_CONTACT_EMAIL` sets the address the "Say hello" button writes to. It is optional: without it the default in `src/components/Talk/Talk.jsx` is used. The address is only ever a link target and is never shown on the page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Where things live
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- `index.html` holds the page metadata: description, Open Graph and Twitter tags and structured data.
+- `src/App.jsx` lays the tiles out on the bento grid, in order.
+- `src/components` has one folder per tile. Content sits in a data file beside each component, for example `Projects/projectList.js`, `Experience/roles.js`, `Toolkit/toolkitList.js` and `Archive/archiveList.js`.
+- `src/styles/GlobalStyles.js` defines the colour and font tokens for the light and dark themes, the grid and the shared tile styles.
+- `src/assets` holds the avatar and the screenshots shown on the project cards.
+- `public` holds the favicons, the web manifest and the social share image.
