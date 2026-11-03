@@ -34,7 +34,7 @@ export const projectList = [
   {
     id: 'fraq',
     title: 'Fraqshares',
-    description: 'Co-investing in real estate for reduced barrier of entry.',
+    description: 'Co-invest in verified businesses and real estate listings',
     tags: ['Nuxt', 'Laravel', 'MySQL'],
     links: [{ href: 'https://app.fraqshares.com', text: 'app.fraqshares.com' }],
     wide: false,

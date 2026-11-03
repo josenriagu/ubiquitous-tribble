@@ -30,7 +30,7 @@ describe('Test suite for Projects', () => {
     const { getAllByRole } = render(<Projects />);
     expect(within(getAllByRole('article')[1])).toEqual({
       title: 'Fraqshares',
-      what: 'Co-investing in real estate for reduced barrier of entry.',
+      what: 'Co-invest in verified businesses and real estate listings',
       tags: ['Nuxt', 'Laravel', 'MySQL'],
       links: [['app.fraqshares.com', 'https://app.fraqshares.com']],
     });
